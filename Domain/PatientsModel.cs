@@ -28,7 +28,7 @@ namespace Domain
             return tabla;
         }
         
-
+        //test
         public DataTable Tabla1User(string IDUSER)
         {
 
