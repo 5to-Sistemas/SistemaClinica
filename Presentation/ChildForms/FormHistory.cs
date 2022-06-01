@@ -21,7 +21,7 @@ namespace Presentation.ChildForms
         {
             Form hm = new Presentacion.Form1();
             hm.ShowDialog();
-
+            //holA
         }
     }
 }
