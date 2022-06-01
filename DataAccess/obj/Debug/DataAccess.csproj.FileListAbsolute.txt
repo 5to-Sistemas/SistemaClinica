@@ -1,0 +1,16 @@
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\bin\Debug\DataAccess.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\bin\Debug\DataAccess.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\bin\Debug\Common.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\bin\Debug\Common.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\obj\Debug\DataAccess.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\bin\Debug\Common.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\DataAccess\obj\Debug\DataAccess.pdb

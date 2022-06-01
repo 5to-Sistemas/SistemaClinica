@@ -1,0 +1,69 @@
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Presentation.exe.config
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.csprojResolveAssemblyReference.cache
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.csproj.GenerateResource.Cache
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Presentation.exe
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Presentation.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Common.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Domain.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\DataAccess.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Common.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\Domain.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\DataAccess.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.exe
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.LoginForm.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.MainForm.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormRecoverPassword.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\CircularProgressBar.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\WinFormAnimation.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\bin\Debug\CircularProgressBar.xml
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.WelcomeForm.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormCalendar.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormHistory.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormPacients.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormReports.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormUserProfile.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormUsers.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormUserMaintenance.resources
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Presentation\obj\Debug\Presentation.ChildForms.FormVerifyUser.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\CircularProgressBar.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\Common.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\Domain.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\WinFormAnimation.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\DataAccess.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\Domain.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\CircularProgressBar.xml
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\DataAccess.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormHistory.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormPacients.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormRecoverPassword.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormReports.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormUserMaintenance.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormUserProfile.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormUsers.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormVerifyUser.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.LoginForm.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.MainForm.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.WelcomeForm.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormDashboard.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\SAPS.exe.config
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\SAPS.exe.manifest
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\SAPS.application
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\SAPS.exe
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\bin\Debug\SAPS.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\SAPS.exe.manifest
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\SAPS.application
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\SAPS.exe
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\SAPS.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormCitaMedica.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormMedical.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentacion.Form1.resources
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Presentation\obj\Debug\Presentation.ChildForms.FormPatientMaintenance.resources

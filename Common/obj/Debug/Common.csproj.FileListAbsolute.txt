@@ -1,0 +1,11 @@
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Common\bin\Debug\Common.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Common\bin\Debug\Common.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Common\obj\Debug\Common.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Common\obj\Debug\Common.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\bin\Debug\Common.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.pdb

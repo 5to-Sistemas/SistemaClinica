@@ -1,0 +1,20 @@
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\bin\Debug\Domain.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\bin\Debug\Domain.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\bin\Debug\Common.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\bin\Debug\DataAccess.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\bin\Debug\Common.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\bin\Debug\DataAccess.pdb
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\obj\Debug\Domain.dll
+D:\RJ Code Advance\Store\CS- Login Project SQL -IL\FullLogin Capas CS SQL\Domain\obj\Debug\Domain.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\bin\Debug\Domain.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\bin\Debug\Domain.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\bin\Debug\Common.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\bin\Debug\DataAccess.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\bin\Debug\DataAccess.pdb
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.dll
+C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.pdb
