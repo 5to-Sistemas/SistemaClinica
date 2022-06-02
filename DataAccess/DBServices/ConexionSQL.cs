@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class ConexionSQL
     {
-        private SqlConnection Conexion = new SqlConnection("Server= DESKTOP-793T557\\SQLEXPRESS; DataBase= SAPSDB; Integrated Security= true");
+        private SqlConnection Conexion = new SqlConnection("Server=AR13L\\SQLEXPRESS; DataBase= SAPSDB; Integrated Security= true");
 
         public SqlConnection AbrirConexion()
         {

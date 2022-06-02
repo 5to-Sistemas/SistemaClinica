@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -43,7 +43,22 @@
             this.lblFechaActual = new System.Windows.Forms.Label();
             this.lblInfoCitasHoy = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.sAPSDBDataSet1 = new Presentation.SAPSDBDataSet1();
+            this.sAPSDBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sAPSDBDataSet = new Presentation.SAPSDBDataSet();
+            this.citamedicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.citamedicaTableAdapter = new Presentation.SAPSDBDataSetTableAdapters.citamedicaTableAdapter();
+            this.idcitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idpacinteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idmedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sintomasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sAPSDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sAPSDBDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sAPSDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.citamedicaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -68,7 +83,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(813, 153);
+            this.btnEdit.Location = new System.Drawing.Point(812, 199);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(130, 38);
             this.btnEdit.TabIndex = 89;
@@ -83,12 +98,13 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(813, 86);
+            this.btnAdd.Location = new System.Drawing.Point(812, 132);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(130, 38);
             this.btnAdd.TabIndex = 87;
             this.btnAdd.Text = "Agendar cita";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
@@ -98,7 +114,7 @@
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(813, 219);
+            this.btnRemove.Location = new System.Drawing.Point(812, 265);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(130, 38);
             this.btnRemove.TabIndex = 88;
@@ -133,49 +149,59 @@
             this.dgvCitas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCitas.AutoGenerateColumns = false;
             this.dgvCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCitas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.dgvCitas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCitas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvCitas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCitas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCitas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCitas.ColumnHeadersHeight = 40;
             this.dgvCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCitas.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvCitas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idcitaDataGridViewTextBoxColumn,
+            this.idpacinteDataGridViewTextBoxColumn,
+            this.idmedicoDataGridViewTextBoxColumn,
+            this.fechaDataGridViewTextBoxColumn,
+            this.horaDataGridViewTextBoxColumn,
+            this.sintomasDataGridViewTextBoxColumn});
+            this.dgvCitas.DataSource = this.citamedicaBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCitas.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCitas.EnableHeadersVisualStyles = false;
             this.dgvCitas.GridColor = System.Drawing.Color.LightGray;
             this.dgvCitas.Location = new System.Drawing.Point(29, 130);
             this.dgvCitas.Name = "dgvCitas";
             this.dgvCitas.ReadOnly = true;
             this.dgvCitas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCitas.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCitas.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvCitas.RowHeadersWidth = 40;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-            this.dgvCitas.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.dgvCitas.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvCitas.RowTemplate.Height = 40;
             this.dgvCitas.Size = new System.Drawing.Size(753, 381);
             this.dgvCitas.TabIndex = 84;
+            this.dgvCitas.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCitas_RowHeaderMouseClick);
             // 
             // lblFechaActual
             // 
@@ -202,6 +228,72 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // sAPSDBDataSet1
+            // 
+            this.sAPSDBDataSet1.DataSetName = "SAPSDBDataSet1";
+            this.sAPSDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sAPSDBDataSet1BindingSource
+            // 
+            this.sAPSDBDataSet1BindingSource.DataSource = this.sAPSDBDataSet1;
+            this.sAPSDBDataSet1BindingSource.Position = 0;
+            // 
+            // sAPSDBDataSet
+            // 
+            this.sAPSDBDataSet.DataSetName = "SAPSDBDataSet";
+            this.sAPSDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // citamedicaBindingSource
+            // 
+            this.citamedicaBindingSource.DataMember = "citamedica";
+            this.citamedicaBindingSource.DataSource = this.sAPSDBDataSet;
+            // 
+            // citamedicaTableAdapter
+            // 
+            this.citamedicaTableAdapter.ClearBeforeFill = true;
+            // 
+            // idcitaDataGridViewTextBoxColumn
+            // 
+            this.idcitaDataGridViewTextBoxColumn.DataPropertyName = "idcita";
+            this.idcitaDataGridViewTextBoxColumn.HeaderText = "idcita";
+            this.idcitaDataGridViewTextBoxColumn.Name = "idcitaDataGridViewTextBoxColumn";
+            this.idcitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idpacinteDataGridViewTextBoxColumn
+            // 
+            this.idpacinteDataGridViewTextBoxColumn.DataPropertyName = "idpacinte";
+            this.idpacinteDataGridViewTextBoxColumn.HeaderText = "idpacinte";
+            this.idpacinteDataGridViewTextBoxColumn.Name = "idpacinteDataGridViewTextBoxColumn";
+            this.idpacinteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idmedicoDataGridViewTextBoxColumn
+            // 
+            this.idmedicoDataGridViewTextBoxColumn.DataPropertyName = "idmedico";
+            this.idmedicoDataGridViewTextBoxColumn.HeaderText = "idmedico";
+            this.idmedicoDataGridViewTextBoxColumn.Name = "idmedicoDataGridViewTextBoxColumn";
+            this.idmedicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaDataGridViewTextBoxColumn
+            // 
+            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
+            this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
+            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // horaDataGridViewTextBoxColumn
+            // 
+            this.horaDataGridViewTextBoxColumn.DataPropertyName = "hora";
+            this.horaDataGridViewTextBoxColumn.HeaderText = "hora";
+            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            this.horaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sintomasDataGridViewTextBoxColumn
+            // 
+            this.sintomasDataGridViewTextBoxColumn.DataPropertyName = "sintomas";
+            this.sintomasDataGridViewTextBoxColumn.HeaderText = "sintomas";
+            this.sintomasDataGridViewTextBoxColumn.Name = "sintomasDataGridViewTextBoxColumn";
+            this.sintomasDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // FormCitaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,7 +311,12 @@
             this.Name = "FormCitaMedica";
             this.Text = "Cita Medica";
             this.Load += new System.EventHandler(this.FormCitaMedica_Load);
+            this.Leave += new System.EventHandler(this.FormCitaMedica_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sAPSDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sAPSDBDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sAPSDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.citamedicaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +334,16 @@
         private System.Windows.Forms.Label lblFechaActual;
         private System.Windows.Forms.Label lblInfoCitasHoy;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.BindingSource sAPSDBDataSet1BindingSource;
+        private SAPSDBDataSet1 sAPSDBDataSet1;
+        private SAPSDBDataSet sAPSDBDataSet;
+        private System.Windows.Forms.BindingSource citamedicaBindingSource;
+        private SAPSDBDataSetTableAdapters.citamedicaTableAdapter citamedicaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcitaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpacinteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idmedicoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sintomasDataGridViewTextBoxColumn;
     }
 }

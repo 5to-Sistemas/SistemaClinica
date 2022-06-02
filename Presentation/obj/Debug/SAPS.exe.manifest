@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lrWhDUxNsYmPVA6ZKK0cSkJTDAOgK3JEeGtAwrP7DgQ=</dsig:DigestValue>
+        <dsig:DigestValue>uWWkRsBUFa85SjJnFs+u4qQrYEqHwcFJRnZOKr3VqLg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,19 +86,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QyiFMpS4pmagekZdSxW/MkB1OKBce1HuMgFkeBILOPA=</dsig:DigestValue>
+        <dsig:DigestValue>k7gRKF20IuqbvzjQA3MDtvGfcwP0PAJhjO2jP8sGDjI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="659456">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="660480">
       <assemblyIdentity name="SAPS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pYgDN4asKg5Suj3wB/OB0I6K9EGv7CIEekqhww3o9hE=</dsig:DigestValue>
+        <dsig:DigestValue>hYsqzDaCsfHRUCSwZbPjYa1G9KHuiD2Q+q22LQyfMIw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

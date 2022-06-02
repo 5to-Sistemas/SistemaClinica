@@ -25,8 +25,8 @@ namespace DataAccess.DBServices
         public ConnectionToSql()
         {
             //Establecer la cadena de conexión.
-            cadenaConexion = "data source=CHEBI\\CHEBISQL;initial catalog=sistemaclinicadb;trusted_connection=true";
-            con = new SqlConnection(@"data source=CHEBI\\CHEBISQL;initial catalog=sistemaclinicadb;trusted_connection=true");
+            cadenaConexion = "data source=AR13L\\SQLEXPRESS;initial catalog=sistemaclinicadb;trusted_connection=true";
+            con = new SqlConnection(@"data source=AR13L\\SQLEXPRESS;initial catalog=sistemaclinicadb;trusted_connection=true");
         }
         protected SqlConnection GetConnection()
         {
