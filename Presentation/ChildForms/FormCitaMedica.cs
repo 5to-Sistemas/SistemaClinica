@@ -10,23 +10,26 @@ using System.Windows.Forms;
 using CapaDatos;
 using DataAccess;
 using DataAccess.DBServices;
+using DataAccess.DBServices.Entities;
 
 namespace Presentation.ChildForms
 {
     public partial class FormCitaMedica : Form
     {
         ConexionSQL cx;
+        CitaMedica cm;
         public FormCitaMedica()
         {
             InitializeComponent();
             cx = new ConexionSQL();
+            cm = new CitaMedica();
         }
 
         private void FormCitaMedica_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'sAPSDBDataSet.citamedica' table. You can move, or remove it, as needed.
             cx.AbrirConexion();
-            //this.citamedicaTableAdapter.Fill(this.sAPSDBDataSet.citamedica);
+            dgvCitas.DataSource = cm.SelectAll(dgvCitas).Tables[0];
             if (dgvCitas.Rows.Count == 0)
             {
                 lblInfoCitasHoy.Text = "Usted no tiene citas programadas para hoy.";

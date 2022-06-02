@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using logica;
 using logica.TablasRecurentes;
 using Common;
+using CapaDatos;
+using DataAccess.DBServices;
 
 namespace Presentacion
 {
@@ -24,18 +26,23 @@ namespace Presentacion
         private string IDcita = null;
         private string IDpaci = null;
         private string IDmedi = null;
-
+        //ConexionSQL cx;
+        ConnectionToSql cx;
         public Form1()
         {
             InitializeComponent();
             cmbxtipoatencion.DataSource = TipoAtencion.GetTypes();
             cmbxfiltrocita.DataSource = FiltroCita.GetFilter();
+            //cx = new ConexionSQL();
+            cx = new ConnectionToSql();
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'sAPSDBDataSet.citamedica' Puede moverla o quitarla según sea necesario.
+            //cx.AbrirConexion();
             this.citamedicaTableAdapter.Fill(this.sAPSDBDataSet.citamedica);
+
             /*this.leer_datos("SELECT * FROM citamedica", ref resultados, "citamedica");
             this.mifiltro = ((DataTable)resultados.Tables["citamedica"]).DefaultView;
             this.dataGridView2.DataSource = mifiltro;*/

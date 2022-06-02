@@ -16,13 +16,14 @@ namespace DataAccess.DBServices.Entities
             cx = new ConnectionToSql();
         }
 
-        public void SelectAll(DataGridView table)
+        public DataSet SelectAll(DataGridView table)
         {
             cx.con = new SqlConnection(cx.cadenaConexion);
-            cx.adpt = new SqlDataAdapter("select * from Medicamento", cx.con);
-            cx.dt = new DataTable();
-            cx.adpt.Fill(cx.dt);
-            table.DataSource = cx.dt;
+            cx.adpt = new SqlDataAdapter("select * from citamedica" +
+                "", cx.con);
+            DataSet ds = new DataSet();
+            cx.adpt.Fill(ds);
+            return ds;
         }
 
     }
