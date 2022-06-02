@@ -16,5 +16,18 @@ namespace Presentation.ChildForms
         {
             InitializeComponent();
         }
+
+        private void FormCitaMedica_Load(object sender, EventArgs e)
+        {
+            if (dgvCitas.Rows.Count == 0)
+                lblInfoCitasHoy.Text = "Usted no tiene citas programadas para hoy.";
+            else
+                lblInfoCitasHoy.Text = "Usted tiene " + dgvCitas.Rows.Count + " citas programadas para hoy.";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFechaActual.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString(); 
+        }
     }
 }

@@ -9,3 +9,9 @@ C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.cspr
 C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.dll
 C:\Users\pc\source\repos\proyectotaller\LoginSystem\Common\obj\Debug\Common.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Common\bin\Debug\Common.dll
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Common\bin\Debug\Common.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.dll
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.pdb
