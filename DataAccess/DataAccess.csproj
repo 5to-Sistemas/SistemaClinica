@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DBServices\ConexionSQL.cs" />
     <Compile Include="DBServices\ConnectionToSql.cs" />
+    <Compile Include="DBServices\Entities\CitaMedica.cs" />
     <Compile Include="DBServices\Entities\Medicamento.cs" />
     <Compile Include="DBServices\Entities\Paciente.cs" />
     <Compile Include="DBServices\Entities\User.cs" />

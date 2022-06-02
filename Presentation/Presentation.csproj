@@ -92,6 +92,12 @@
     <Compile Include="BaseForms\BaseMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChildForms\FormAddCitaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormAddCitaMedica.Designer.cs">
+      <DependentUpon>FormAddCitaMedica.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\FormCitaMedica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     <Compile Include="WelcomeForm.Designer.cs">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChildForms\FormAddCitaMedica.resx">
+      <DependentUpon>FormAddCitaMedica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormCitaMedica.resx">
       <DependentUpon>FormCitaMedica.cs</DependentUpon>
     </EmbeddedResource>

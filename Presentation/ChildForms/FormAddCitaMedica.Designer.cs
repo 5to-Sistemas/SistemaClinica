@@ -172,7 +172,7 @@
             this.Controls.Add(this.lblMedico);
             this.Controls.Add(this.lblEspecialidad);
             this.Name = "FormAddCitaMedica";
-            this.Text = "FormAddCitaMedica";
+            this.Text = "Añadir cita medica";
             this.Controls.SetChildIndex(this.lblEspecialidad, 0);
             this.Controls.SetChildIndex(this.lblMedico, 0);
             this.Controls.SetChildIndex(this.lblFecha, 0);
