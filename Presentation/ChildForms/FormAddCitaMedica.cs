@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Presentation.ChildForms
 {
-    public partial class FormAddCitaMedica : Form
+    public partial class FormAddCitaMedica : BaseForms.BaseFixedForm
     {
         public FormAddCitaMedica()
         {
