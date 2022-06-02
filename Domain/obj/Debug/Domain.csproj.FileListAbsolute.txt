@@ -18,3 +18,14 @@ C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.cspr
 C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.dll
 C:\Users\pc\source\repos\proyectotaller\LoginSystem\Domain\obj\Debug\Domain.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Domain.dll
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Domain.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Common.dll
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\bin\Debug\DataAccess.dll
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Common.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\bin\Debug\DataAccess.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.dll
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.pdb
