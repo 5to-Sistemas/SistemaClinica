@@ -25,15 +25,15 @@ namespace DataAccess.DBServices
         public ConnectionToSql()
         {
             //Establecer la cadena de conexión.
-            cadenaConexion = "data source=AR13L\\SQLEXPRESS;initial catalog=sistemaclinicadb;trusted_connection=true";
-            con = new SqlConnection(@"data source=AR13L\\SQLEXPRESS;initial catalog=sistemaclinicadb;trusted_connection=true");
+            cadenaConexion = "data source=AR13L\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true";
+            con = new SqlConnection(@"data source=AR13L\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true");
         }
         protected SqlConnection GetConnection()
         {
             //Este métedo se encarga de establecer y devolver el objeto de conexión a SQL Server.
             return new SqlConnection(cadenaConexion);
         }  
-        private OleDbConnection Abrir()     // La clase OleDbConnection representa una conexión abierta con una fuente de datos.
+        protected OleDbConnection Abrir()     // La clase OleDbConnection representa una conexión abierta con una fuente de datos.
         {
             conectar = new OleDbConnection(cadenaConexion);//Inicializa una nueva instancia de la clase OleDbConnection con la cadena de conexión especificado.
             try

@@ -26,7 +26,7 @@ namespace Presentation.ChildForms
         private void FormPacients_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'sAPSDBDataSet1.paciente' Puede moverla o quitarla según sea necesario.
-            this.pacienteTableAdapter.Fill(this.sAPSDBDataSet1.paciente);
+            //this.pacienteTableAdapter.Fill(this.sAPSDBDataSet1.paciente);
 
         }
 

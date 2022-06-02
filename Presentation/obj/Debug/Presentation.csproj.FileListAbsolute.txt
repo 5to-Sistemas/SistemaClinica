@@ -107,3 +107,4 @@ C:\Users\ariel\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\SAPS.appli
 C:\Users\ariel\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\Presentation.csproj.CopyComplete
 C:\Users\ariel\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\SAPS.exe
 C:\Users\ariel\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\SAPS.pdb
+C:\Users\ariel\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormAddCitaMedica.resources
