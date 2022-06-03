@@ -43,6 +43,7 @@ namespace Presentation.ChildForms
                 btnEdit.Enabled = true;
                 btnRemove.Enabled = true;
             }
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -54,6 +55,10 @@ namespace Presentation.ChildForms
         {
             FormAddCitaMedica addCitaMedica = new FormAddCitaMedica();
             addCitaMedica.Show();
+            if (DialogResult == DialogResult.OK) {
+                //cm.InsertData(,cm.fecha,cm.hora,cm.sintomas);
+                dgvCitas.DataSource = cm.SelectByDate(dgvCitas, DateTime.Now).Tables[0];
+            }
         }
 
         private void dgvCitas_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)

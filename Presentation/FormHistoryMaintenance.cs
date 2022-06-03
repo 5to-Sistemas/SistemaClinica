@@ -14,10 +14,11 @@ using logica.TablasRecurentes;
 using Common;
 using CapaDatos;
 using DataAccess.DBServices;
+using DataAccess.DBServices.Entities;
 
 namespace Presentacion
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Presentation.BaseForms.BaseFixedForm
     {
         HistorialLogica objhistorialL = new HistorialLogica();
         private string IDhisto = null;
@@ -26,22 +27,22 @@ namespace Presentacion
         private string IDcita = null;
         private string IDpaci = null;
         private string IDmedi = null;
-        //ConexionSQL cx;
-        ConnectionToSql cx;
+
+        CitaMedica cm ;
+
         public Form1()
         {
             InitializeComponent();
             cmbxtipoatencion.DataSource = TipoAtencion.GetTypes();
             cmbxfiltrocita.DataSource = FiltroCita.GetFilter();
-            //cx = new ConexionSQL();
-            cx = new ConnectionToSql();
+            cm = new CitaMedica();
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'sAPSDBDataSet.citamedica' Puede moverla o quitarla según sea necesario.
             //cx.AbrirConexion();
-            this.citamedicaTableAdapter.Fill(this.sAPSDBDataSet.citamedica);
+            DBVcitasmedicas.DataSource = cm.SelectAll(DBVcitasmedicas);
 
             /*this.leer_datos("SELECT * FROM citamedica", ref resultados, "citamedica");
             this.mifiltro = ((DataTable)resultados.Tables["citamedica"]).DefaultView;

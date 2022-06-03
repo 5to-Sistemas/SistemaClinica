@@ -45,6 +45,7 @@
     <Compile Include="DBServices\ConnectionToSql.cs" />
     <Compile Include="DBServices\Entities\CitaMedica.cs" />
     <Compile Include="DBServices\Entities\Medicamento.cs" />
+    <Compile Include="DBServices\Entities\Medico.cs" />
     <Compile Include="DBServices\Entities\Paciente.cs" />
     <Compile Include="DBServices\Entities\User.cs" />
     <Compile Include="DBServices\HistorialCD.cs" />

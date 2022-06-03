@@ -139,6 +139,7 @@
             this.btnCancel.TabIndex = 129;
             this.btnCancel.Text = "X  Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -153,6 +154,7 @@
             this.btnSave.TabIndex = 130;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormAddCitaMedica
             // 
@@ -173,6 +175,7 @@
             this.Controls.Add(this.lblEspecialidad);
             this.Name = "FormAddCitaMedica";
             this.Text = "Añadir cita medica";
+            this.Load += new System.EventHandler(this.FormAddCitaMedica_Load);
             this.Controls.SetChildIndex(this.lblEspecialidad, 0);
             this.Controls.SetChildIndex(this.lblMedico, 0);
             this.Controls.SetChildIndex(this.lblFecha, 0);

@@ -11,6 +11,13 @@ namespace DataAccess.DBServices.Entities
 {
     public class CitaMedica
     {
+        #region -> Atributos
+        public int idmedico { get; set; }
+        public DateTime fecha { get; set; }
+        public string hora { get; set; }
+        public string sintomas { get; set; }
+        #endregion
+
         ConnectionToSql cx;
         public CitaMedica(){
             cx = new ConnectionToSql();
@@ -35,5 +42,12 @@ namespace DataAccess.DBServices.Entities
            return ds;
         }
 
+        public int InsertData(int idpaciente,int idmedico,string fecha, string hora, string sintomas) {
+            cx.con = new SqlConnection(cx.cadenaConexion);
+            SqlCommand cmd = new SqlCommand("insert into citamedica(idpaciente,idmedico,fecha,hora,sintomas) values ("
+                + idpaciente + "," + idmedico +","+fecha+","+hora+","+sintomas+")", cx.con);
+            int rpta = cmd.ExecuteNonQuery();
+            return rpta;
+        }
     }
 }
