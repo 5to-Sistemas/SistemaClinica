@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataAccess</RootNamespace>
     <AssemblyName>DataAccess</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBServices\Conexion.cs" />
     <Compile Include="DBServices\ConexionSQL.cs" />
     <Compile Include="DBServices\ConnectionToSql.cs" />
     <Compile Include="DBServices\Entities\CitaMedica.cs" />
+    <Compile Include="DBServices\Entities\Laboratorio.cs" />
     <Compile Include="DBServices\Entities\Medicamento.cs" />
     <Compile Include="DBServices\Entities\Medico.cs" />
     <Compile Include="DBServices\Entities\Paciente.cs" />

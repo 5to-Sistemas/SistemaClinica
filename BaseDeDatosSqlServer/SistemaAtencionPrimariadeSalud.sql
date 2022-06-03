@@ -1,4 +1,4 @@
-drop database SAPSDB
+﻿drop database SAPSDB
 GO
 create database SAPSDB
 GO
@@ -218,7 +218,7 @@ create table Laboratorio
 (
 	codLaboratorio int not null primary key,
 	Nombre varchar(50) not null,
-	Direcci�n varchar(200) not null,
+	Dirección varchar(200) not null,
 	nombreContacto varchar(100) not null,
 	telefonoContacto varchar(20) not null
 )
@@ -246,3 +246,42 @@ create table Medicamento
 GO
 
 -----------------------------------------------------------------
+--Inserts de ViaAdministración
+	insert into ViaAdministracion(codAdministracion,Nombre) 
+	values(1, 'Oral'),(2,'Intravenoso');
+	insert into ViaAdministracion(codAdministracion,Nombre) 
+	values(3, 'Loción');
+
+	--Inserts de TipoPresentacion
+	insert into TipoPresentacion(codPresentacion,Presentacion) 
+	values(1, 'Comprimido'),(2,'Jarabe');
+	insert into TipoPresentacion(codPresentacion,Presentacion) 
+	values(3, 'Inyectable'),(4,'Aplicable en piel');
+
+	--Inserts de Laboratorio
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(1, 'Laboratorio James', 'Calle 1', 'James Maximoff', '75073218'),(2,'Laboratorio Melanie', 'Calle 2', 'Melanie Martinez', '78741685');
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(3, 'Special Labs Co.', 'Calle 3', 'Ariel Molina', '76344108'),(4,'Ariel XYZ Labs', 'Calle 4', 'Esteban Perez Zegarra', '25448768');
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(5, 'Python Labs', 'Calle 5', 'Gabriel Landivar Sanchez', '78526984'),(6,'Rapture Labs', 'Calle 6', 'Andres Guerrero', '72564454');
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(7, 'Botrix Lab', 'Calle 7', 'Yesenia Lamas', '61500646'),(8,'Lgbtq+ Lab', 'Calle 8', 'Alejandra Santos', '71260085');
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(9, 'EMI Civil Lab', 'Calle 9', 'Natalia Padilla', '58667125'),(10,'Meca Lab', 'Calle 10', 'Diego Ortuño', '22548799');
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(11, 'Strange Lab', 'Calle 11', 'Brisa Ramos', '97585555'),(12,'Roblox Labs Co.', 'Calle 12', 'Nick Nelson', '60004500');
+	insert into Laboratorio(codLaboratorio,Nombre, Dirección, nombreContacto, telefonoContacto) 
+	values(13, 'Yaribu Labs', 'Calle 13', 'Mery Sandoval', '78133845'),(14,'Medi+ Labs', 'Calle 14', 'Cristy Agreda', '25666664');
+	
+	--Inserts de Medicamento
+	insert into Medicamento(nombreComercial, nombreCientifico, componenteCientifico, codAdministracion, codPresentacion, codLaboratorio) 
+	values('Paracetamol', 'acetaminofén', 'Fenacetina', 1, 1, 1),('Aspirina', 'ácido acetil-salicílico', 'ácido acetilsalicílico', 1, 1, 2);
+	insert into Medicamento(nombreComercial, nombreCientifico, componenteCientifico, codAdministracion, codPresentacion, codLaboratorio) 
+	values('AZELEX', 'Ácido acetilsalicílico', 'C₉H₈O₄', 1, 1, 5),
+	('Analgésico', 'Metamizol sódico', 'C13H16N3O4SNa', 2, 3, 8),
+	('Buprex', 'Buprenorfina', 'C29H41NO4', 1, 1, 10),
+	('Qutenza', 'Capsaicina', 'C18H27NO3', 3, 4, 10),
+	('Dilaudid', 'Hidromorfina', 'C17H19NO3', 1, 1, 3),
+	('Oxycontin', 'Oxicodona', 'C18H21NO4', 1, 1, 6),
+	('Ultram', 'Tramadol', 'C16H25NO2', 2, 3, 7);

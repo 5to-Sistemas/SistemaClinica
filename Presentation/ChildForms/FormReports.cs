@@ -43,5 +43,11 @@ namespace Presentation.ChildForms
                 }
             }
         }
+
+
+        private void FormReports_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

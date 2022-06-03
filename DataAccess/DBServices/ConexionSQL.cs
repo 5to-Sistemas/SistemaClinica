@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class ConexionSQL
     {
-        private SqlConnection Conexion = new SqlConnection("Data Source=AR13L\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True");
+        private SqlConnection Conexion = new SqlConnection("Data Source=LAPTOP-ANDRES\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True");
 
         public SqlConnection AbrirConexion()
         {
