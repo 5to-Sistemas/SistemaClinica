@@ -49,5 +49,20 @@ namespace DataAccess.DBServices.Entities
             int rpta = cmd.ExecuteNonQuery();
             return rpta;
         }
+
+        public int UpdateData(int idpaciente, int idmedico, string fecha, string hora, string sintomas) {
+            cx.con = new SqlConnection(cx.cadenaConexion);
+            SqlCommand cmd = new SqlCommand("update citamedica set " +
+                "idpaciente=" + idpaciente + ", idmedico=" + idmedico + ", fecha=" + fecha + ", hora=" + hora + ", sintomas=" + sintomas + " where idmedico= " + idmedico, cx.con);
+            int rpta = cmd.ExecuteNonQuery();
+            return rpta;
+        }
+
+        public int DeleteData(int idmedico) {
+            cx.con = new SqlConnection(cx.cadenaConexion);
+            SqlCommand cmd = new SqlCommand("delete from citamedica where idmedico=" + idmedico, cx.con);
+            int rpta = cmd.ExecuteNonQuery();
+            return rpta;
+        }
     }
 }
