@@ -40,3 +40,14 @@ C:\Users\pc\GitHub\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
 C:\Users\pc\GitHub\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\pc\GitHub\Domain\obj\Debug\Domain.dll
 C:\Users\pc\GitHub\Domain\obj\Debug\Domain.pdb
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Domain.dll
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Domain.pdb
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Common.dll
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\bin\Debug\DataAccess.dll
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\bin\Debug\Common.pdb
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\bin\Debug\DataAccess.pdb
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.dll
+C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.pdb
