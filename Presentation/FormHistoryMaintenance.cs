@@ -12,10 +12,13 @@ using System.Windows.Forms;
 using logica;
 using logica.TablasRecurentes;
 using Common;
+using CapaDatos;
+using DataAccess.DBServices;
+using DataAccess.DBServices.Entities;
 
 namespace Presentacion
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Presentation.BaseForms.BaseFixedForm
     {
         HistorialLogica objhistorialL = new HistorialLogica();
         private string IDhisto = null;
@@ -25,17 +28,22 @@ namespace Presentacion
         private string IDpaci = null;
         private string IDmedi = null;
 
+        CitaMedica cm ;
+
         public Form1()
         {
             InitializeComponent();
             cmbxtipoatencion.DataSource = TipoAtencion.GetTypes();
             cmbxfiltrocita.DataSource = FiltroCita.GetFilter();
+            cm = new CitaMedica();
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'sAPSDBDataSet.citamedica' Puede moverla o quitarla según sea necesario.
-            this.citamedicaTableAdapter.Fill(this.sAPSDBDataSet.citamedica);
+            //cx.AbrirConexion();
+            DBVcitasmedicas.DataSource = cm.SelectAll(DBVcitasmedicas);
+
             /*this.leer_datos("SELECT * FROM citamedica", ref resultados, "citamedica");
             this.mifiltro = ((DataTable)resultados.Tables["citamedica"]).DefaultView;
             this.dataGridView2.DataSource = mifiltro;*/
