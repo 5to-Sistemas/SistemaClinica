@@ -27,6 +27,8 @@ namespace Presentation.ChildForms
         private bool userModify; //Obtiene o establece un usuario será editado.
         private int userId;//Obtiene o establece el id del usuario a editar.
         private Image defaultPhoto = Properties.Resources.DefaultUserProfile;//Foto predeterminada para usuarios que no tienen una foto agregada.
+        private PatientsModel pacientmodel;
+        private MedicalModel medicmodel;
 
         #endregion
 
@@ -79,6 +81,37 @@ namespace Presentation.ChildForms
             if (userModel.Photo != null)
                 PictureBoxPhoto.Image = ItemConverter.BinaryToImage(userModel.Photo);
             else PictureBoxPhoto.Image = defaultPhoto;
+
+            if (userModel.Position == "Medico")
+            {
+                DataTable dt = new DataTable();
+                string iduser = medicmodel.obteneriddeuserbyusername(userModel.Username);
+                dt = medicmodel.Mostrartablade1medico(iduser);
+                txbci.Text = dt.Rows[0][1].ToString();
+                txbdireccion.Text = dt.Rows[0][2].ToString();
+                txbtelefono.Text = dt.Rows[0][3].ToString();
+                txbdiashabi.Text = dt.Rows[0][4].ToString();
+                txbhoraini.Text = dt.Rows[0][5].ToString();
+                txbhorafin.Text = dt.Rows[0][6].ToString();
+                cmbxespecialidad.Text = dt.Rows[0][7].ToString();
+                cmbxsexo.Text = dt.Rows[0][8].ToString();
+            }
+            if (userModel.Position == "Paciente")
+            {
+                DataTable dt = new DataTable();
+                string iduser = pacientmodel.obteneriddeuserbyusername(userModel.Username);
+                dt = pacientmodel.Mostrartablade1paciente(iduser);
+                txbci.Text = dt.Rows[0][1].ToString();
+                txbdireccion.Text = dt.Rows[0][2].ToString();
+                dtpfechanac.Value = Convert.ToDateTime(dt.Rows[0][3]);
+                cmbxtiposangre.Text = dt.Rows[0][4].ToString();
+                txbtelefono.Text = dt.Rows[0][5].ToString();
+                cmbxsexo.Text = dt.Rows[0][6].ToString();
+                cmbxestadocivil.Text = dt.Rows[0][7].ToString();
+                cmbxstate.Text = dt.Rows[0][8].ToString();
+
+            }
+
         }
         private void FillUserModel()
         {//LLenar modelo
@@ -112,6 +145,17 @@ namespace Presentation.ChildForms
                         result = userModel.ModifyUser();//Invocar metodo ModifyUser del modelo de usuario.
                         if (result > 0)
                         {
+                            if (cmbPosition.Text == "Medico")
+                            {
+                                string iduser = medicmodel.obteneriddeuserbyusername(txtUsername.Text);
+                                medicmodel.Editar(iduser, txbci.Text, txbdireccion.Text, txbtelefono.Text, txbdiashabi.Text, txbhoraini.Text, txbhorafin.Text, cmbxespecialidad.Text, cmbxsexo.Text);
+                            }
+                            if (cmbPosition.Text == "Paciente")
+                            {
+                                string iduser = pacientmodel.obteneriddeuserbyusername(txtUsername.Text);
+                                pacientmodel.Editar(iduser, txbci.Text, txbdireccion.Text, dtpfechanac.Value.ToString(), cmbxtiposangre.Text, txbtelefono.Text, cmbxsexo.Text, cmbxestadocivil.Text, cmbxstate.Text);
+
+                            }
                             MessageBox.Show("Usuario actualizado con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.DialogResult = System.Windows.Forms.DialogResult.OK;//Establecer Ok como resultado de dialogo del formulario.
                             this.Close();//Cerrar formulario
@@ -128,6 +172,18 @@ namespace Presentation.ChildForms
 
                         if (result > 0)
                         {
+                            if (cmbPosition.Text == "Medico")
+                            {
+                                string iduser = medicmodel.obteneriddeuserbyusername(txtUsername.Text);
+                                medicmodel.Insertar(iduser, txbci.Text,txbdireccion.Text,txbtelefono.Text,txbdiashabi.Text,txbhoraini.Text,txbhorafin.Text,cmbxespecialidad.Text,cmbxsexo.Text);
+                            }
+                            if (cmbPosition.Text == "Paciente")
+                            {
+                                string iduser = pacientmodel.obteneriddeuserbyusername(txtUsername.Text);
+                                pacientmodel.Insertar(iduser,txbci.Text,txbdireccion.Text,dtpfechanac.Value.ToString(),cmbxtiposangre.Text,txbtelefono.Text,cmbxsexo.Text,cmbxestadocivil.Text,cmbxstate.Text);
+                                
+                            }
+                            
                             MessageBox.Show("Usuario agregado con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.DialogResult = System.Windows.Forms.DialogResult.OK; //Establecer Ok como resultado de dialogo del formulario.
                             this.Close();//Cerrar formulario
@@ -162,27 +218,7 @@ namespace Presentation.ChildForms
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (cmbPosition.Text == "Medico")
-                {
-                    Save();//Guardar cambios.
-                }
-                else if (cmbPosition.Text == "Paciente")
-                {
-                    Save();
-                }
-                else
-                {
-                    Save();
-                }
-            }
-            catch
-            {
-
-            }
-            
-            
+            Save();//Guardar cambios.
         }
         private void btnAddPhoto_Click(object sender, EventArgs e)
         {

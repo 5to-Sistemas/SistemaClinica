@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.DBServices
 {
-    public class PatientsDA : ConnectionToSql
+    public class MedicalDA
     {
         private ConexionSQL conexion = new ConexionSQL();
 
@@ -21,7 +21,7 @@ namespace DataAccess.DBServices
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM paciente";
+            comando.CommandText = "SELECT * FROM medico";
             comando.CommandType = CommandType.Text;
             leer = comando.ExecuteReader();
             tabla.Load(leer);
@@ -31,16 +31,16 @@ namespace DataAccess.DBServices
 
 
         }
-        
-        
-        public DataTable obtenertablade1pacinte(int idpaci)
+
+
+        public DataTable obtenertablade1medico(int idmedico)
         {
             DataTable dt = new DataTable();
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM paciente WHERE idpaciente=@idpaciente";
+            comando.CommandText = "SELECT * FROM medico WHERE idmedico=@idmedico";
             comando.CommandType = CommandType.Text;
             comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@idpaciente", idpaci);
+            comando.Parameters.AddWithValue("@idmedico", idmedico);
             leer = comando.ExecuteReader();
             dt.Load(leer);
             conexion.CerrarConexion();
@@ -78,30 +78,30 @@ namespace DataAccess.DBServices
             comando.ExecuteNonQuery();
 
             conexion.CerrarConexion();
-            return dt.Rows[0][0].ToString(); 
+            return dt.Rows[0][0].ToString();
 
         }
 
 
-        public void Insertar(int idpaciente, int ci,string direccion, DateTime fecha,string tiposangre,int telefono, string sexo, string estadocivil, string estado)
+        public void Insertar(int idmedico, int ci, string direccion, int telefono, string diahabiles, string HorarioInicio, string HorarioFin, string especialidad, string sexo)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "INSERT INTO paciente" +
-                " VALUES(@idpaciente,@ci,@direccion," +
-                "@fecha,@tiposangre,@telefono,@sexo" +
-                ",@estadocivil,@estado)";
+            comando.CommandText = "INSERT INTO medico" +
+                " VALUES(@idmedico,@ci,@direccion," +
+                "@telefono,@diahabiles,@HorarioInicio,@HorarioFin" +
+                ",@especialidad,@sexo)";
             comando.CommandType = CommandType.Text;
             comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@idpaciente", idpaciente);
+            comando.Parameters.AddWithValue("@idmedico", idmedico);
             comando.Parameters.AddWithValue("@ci", ci);
             comando.Parameters.AddWithValue("@direccion", direccion);
-            comando.Parameters.AddWithValue("@fecha", fecha);
-            comando.Parameters.AddWithValue("@tiposangre", tiposangre);
             comando.Parameters.AddWithValue("@telefono", telefono);
+            comando.Parameters.AddWithValue("@diahabiles", diahabiles);
+            comando.Parameters.AddWithValue("@HorarioInicio", HorarioInicio);
+            comando.Parameters.AddWithValue("@HorarioFin", HorarioFin);
+            comando.Parameters.AddWithValue("@especialidad", especialidad);
             comando.Parameters.AddWithValue("@sexo", sexo);
-            comando.Parameters.AddWithValue("@estadocivil", estadocivil);
-            comando.Parameters.AddWithValue("@estado", estado);
-            
+
 
             comando.ExecuteNonQuery();
 
@@ -109,38 +109,38 @@ namespace DataAccess.DBServices
 
         }
 
-        public void Editar(int idpaciente, int ci, string direccion, DateTime fecha, string tiposangre, int telefono, string sexo, string estadocivil, string estado)
+        public void Editar(int idmedico, int ci, string direccion, int telefono, string diahabiles, string HorarioInicio, string HorarioFin, string especialidad, string sexo)
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "update paciente set idpaciente=@idpaciente, " +
+            comando.CommandText = "update medico set idmedico=@idmedico, " +
                 "ci=@ci, direccion=@direccion, " +
-                "fechanac=@fechanac, tiposangre=@tiposangre, telefono=@telefono, " +
-                "sexo=@sexo, estadocivil=@estadocivil, estado=@estado where idpaciente=@idpaciente";
+                "telefono=@telefono, diahabiles=@diahabiles, HorarioInicio=@HorarioInicio, " +
+                "HorarioFin=@HorarioFin, especialidad=@especialidad, sexo=@sexo where idpaciente=@idpaciente";
             comando.CommandType = CommandType.Text;
             comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@idpaciente", idpaciente);
+            comando.Parameters.AddWithValue("@idmedico", idmedico);
             comando.Parameters.AddWithValue("@ci", ci);
             comando.Parameters.AddWithValue("@direccion", direccion);
-            comando.Parameters.AddWithValue("@fechanac", fecha);
-            comando.Parameters.AddWithValue("@tiposangre", tiposangre);
             comando.Parameters.AddWithValue("@telefono", telefono);
+            comando.Parameters.AddWithValue("@diahabiles", diahabiles);
+            comando.Parameters.AddWithValue("@HorarioInicio", HorarioInicio);
+            comando.Parameters.AddWithValue("@HorarioFin", HorarioFin);
+            comando.Parameters.AddWithValue("@especialidad", especialidad);
             comando.Parameters.AddWithValue("@sexo", sexo);
-            comando.Parameters.AddWithValue("@estadocivil", estadocivil);
-            comando.Parameters.AddWithValue("@estado", estado);
 
             comando.ExecuteNonQuery();
 
             comando.Parameters.Clear();
         }
 
-        public void Eliminar(int idpaciente)
+        public void Eliminar(int idmedico)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "delete from paciente where idpaciente=@idpaciente";
+            comando.CommandText = "delete from medico where idmedico=@idmedico";
             comando.CommandType = CommandType.Text;
             comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@idpaciente", idpaciente);
+            comando.Parameters.AddWithValue("@idmedico", idmedico);
 
             comando.ExecuteNonQuery();
 

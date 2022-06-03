@@ -49,6 +49,7 @@
     <Compile Include="DBServices\Entities\Paciente.cs" />
     <Compile Include="DBServices\Entities\User.cs" />
     <Compile Include="DBServices\HistorialCD.cs" />
+    <Compile Include="DBServices\MedicalDA.cs" />
     <Compile Include="DBServices\PatientsDA.cs" />
     <Compile Include="DBServices\UserDao.cs" />
     <Compile Include="MailServices\EmailService.cs" />

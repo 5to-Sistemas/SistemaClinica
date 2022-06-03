@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HistorialLogica.cs" />
+    <Compile Include="MedicalModel.cs" />
     <Compile Include="PatientsModel.cs" />
     <Compile Include="UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

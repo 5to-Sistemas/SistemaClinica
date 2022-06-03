@@ -6,7 +6,6 @@ GO
 USE SAPSDB
 GO
 
-
 create table Users(
 	id int identity(1,1) primary key,
 	userName nvarchar (100) unique not null,
