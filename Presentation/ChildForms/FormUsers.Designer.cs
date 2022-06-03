@@ -36,6 +36,9 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbxtypesuser = new System.Windows.Forms.ComboBox();
+            this.txbfiltrouser = new System.Windows.Forms.TextBox();
+            this.cmbxfiltrousers = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +123,7 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -136,14 +139,42 @@
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.Size = new System.Drawing.Size(899, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(899, 381);
             this.dataGridView1.TabIndex = 68;
+            // 
+            // cmbxtypesuser
+            // 
+            this.cmbxtypesuser.FormattingEnabled = true;
+            this.cmbxtypesuser.Location = new System.Drawing.Point(800, 21);
+            this.cmbxtypesuser.Name = "cmbxtypesuser";
+            this.cmbxtypesuser.Size = new System.Drawing.Size(130, 21);
+            this.cmbxtypesuser.TabIndex = 74;
+            this.cmbxtypesuser.TextChanged += new System.EventHandler(this.cmbxtypesuser_TextChanged);
+            // 
+            // txbfiltrouser
+            // 
+            this.txbfiltrouser.Location = new System.Drawing.Point(31, 22);
+            this.txbfiltrouser.Name = "txbfiltrouser";
+            this.txbfiltrouser.Size = new System.Drawing.Size(271, 20);
+            this.txbfiltrouser.TabIndex = 75;
+            this.txbfiltrouser.TextChanged += new System.EventHandler(this.txbfiltrouser_TextChanged);
+            // 
+            // cmbxfiltrousers
+            // 
+            this.cmbxfiltrousers.FormattingEnabled = true;
+            this.cmbxfiltrousers.Location = new System.Drawing.Point(308, 22);
+            this.cmbxfiltrousers.Name = "cmbxfiltrousers";
+            this.cmbxfiltrousers.Size = new System.Drawing.Size(130, 21);
+            this.cmbxfiltrousers.TabIndex = 76;
             // 
             // FormUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 528);
+            this.Controls.Add(this.cmbxfiltrousers);
+            this.Controls.Add(this.txbfiltrouser);
+            this.Controls.Add(this.cmbxtypesuser);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnRemove);
@@ -153,6 +184,7 @@
             this.Load += new System.EventHandler(this.FormUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -162,5 +194,8 @@
         internal System.Windows.Forms.Button btnAdd;
         internal System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cmbxtypesuser;
+        private System.Windows.Forms.TextBox txbfiltrouser;
+        private System.Windows.Forms.ComboBox cmbxfiltrousers;
     }
 }

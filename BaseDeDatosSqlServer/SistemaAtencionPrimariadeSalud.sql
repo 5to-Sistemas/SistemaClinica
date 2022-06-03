@@ -65,6 +65,7 @@ CREATE TABLE medico(
 	HorarioInicio varchar(50),
 	HorarioFin varchar(50),
 	especialidad varchar(50),
+	sexo varchar(2),
 	foreign key (idmedico) references Users(id)
 	
 )
@@ -73,9 +74,9 @@ GO
 /*insert into medico values('1','1354984','calle bush','68426365','l-m-j','7am','8pm',null)
 GO
 insert into medico values('1','1354984','calle Bush #241','68426365','l-m-j','7am','8pm',null)*/
-insert into medico values('2','7684867','av. Santa Maria #453','79491802','m-j-v','7am','6pm',null)
-insert into medico values('3','6754633','calle Tarbo #43','70008370','l-m-s','7am','8pm',null)
-insert into medico values('4','5573333','calle Auxiliadora #3','76674256','l-s-d','9am','5pm',null)
+insert into medico values('2','7684867','av. Santa Maria #453','79491802','m-j-v','7am','6pm',null,'M')
+insert into medico values('3','6754633','calle Tarbo #43','70008370','l-m-s','7am','8pm',null,'M')
+insert into medico values('4','5573333','calle Auxiliadora #3','76674256','l-s-d','9am','5pm',null,'M')
 /*insert into medico values('5','7858694','av. La barranca #21','68221665','l-m-j','8am','8pm',null)
 insert into medico values('6','6576994','av. Nueva Asuncion #54','73491802','m-v-d','11am','9pm',null)
 insert into medico values('7','5686859','av. El trompillo #124','70908370','l-m-d','11am','7pm',null)
@@ -95,20 +96,20 @@ CREATE TABLE paciente(
 	telefono int,
 	sexo varchar(2),
 	estadocivil varchar(30),
-	estado bit default(1),/*activo o no activo*/
+	estado varchar(30),
 	foreign key (idpaciente) references Users(id)
 )
 GO
 
 /*insert into paciente values('1','131985461','calle belman','2000-10-02','H+','75566165','M','Soltero','1')
 GO*/
-insert into paciente values('5','1319854','calle Los Mapajos #65','2000-10-02','A+','75566165','M','Soltero','1')
-insert into paciente values('6','6757468','calle Quitachiyu #23','2001-08-15','O+','75566165','F','Soltero','2')
-insert into paciente values('7','5468824','av. Beni #342','1990-02-09','A-','75566165','F','Soltero','3')
-insert into paciente values('8','3546453','av. Noel Kempff Mercado #32','1960-11-28','A+','75566165','M','Soltero','4')
-insert into paciente values('9','7668071','av. Busch #241','1981-01-21','H+','75566165','M','Soltero','5')
-insert into paciente values('10','6546458','calle Nicolas Ortiz #42','1973-03-18','AB+','75566165','M','Soltero','6')
-insert into paciente values('11','3565465','calle Guillermo Weise #31','1962-06-12','B-','75566165','M','Soltero','7')
+insert into paciente values('5','1319854','calle Los Mapajos #65','2000-10-02','A+','75566165','M','Soltero','ACTIVO')
+insert into paciente values('6','6757468','calle Quitachiyu #23','2001-08-15','O+','75566165','F','Soltero','ACTIVO')
+insert into paciente values('7','5468824','av. Beni #342','1990-02-09','A-','75566165','F','Soltero','ACTIVO')
+insert into paciente values('8','3546453','av. Noel Kempff Mercado #32','1960-11-28','A+','75566165','M','Soltero','ACTIVO')
+insert into paciente values('9','7668071','av. Busch #241','1981-01-21','H+','75566165','M','Soltero','ACTIVO')
+insert into paciente values('10','6546458','calle Nicolas Ortiz #42','1973-03-18','AB+','75566165','M','Soltero','ACTIVO')
+insert into paciente values('11','3565465','calle Guillermo Weise #31','1962-06-12','B-','75566165','M','Soltero','ACTIVO')
 /*insert into paciente values('8','7567355','av. Pirai','1971-05-19','H+','75566165','AB-','Soltero','8')
 insert into paciente values('9','6757583','calle Regimento #31','1954-03-22','A+','75566165','M','Soltero','9')
 insert into paciente values('10','68685860','calle Lagunillas #12','1968-08-14','A+','75566165','M','Soltero','10')

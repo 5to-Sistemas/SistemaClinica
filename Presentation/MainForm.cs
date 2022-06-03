@@ -72,7 +72,7 @@ namespace Presentation
                 case Positions.Medico:
                     btnUsers.Enabled = false;
                     btnUsers.Enabled = false;
-                    btnDoctors.Enabled = false;
+                    
                     btnReports.Enabled = false;
                     btnDashboard.Enabled = false;
                     break;

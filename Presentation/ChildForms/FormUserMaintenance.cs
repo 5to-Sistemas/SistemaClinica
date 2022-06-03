@@ -162,7 +162,27 @@ namespace Presentation.ChildForms
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Save();//Guardar cambios.
+            try
+            {
+                if (cmbPosition.Text == "Medico")
+                {
+                    Save();//Guardar cambios.
+                }
+                else if (cmbPosition.Text == "Paciente")
+                {
+                    Save();
+                }
+                else
+                {
+                    Save();
+                }
+            }
+            catch
+            {
+
+            }
+            
+            
         }
         private void btnAddPhoto_Click(object sender, EventArgs e)
         {
@@ -186,5 +206,37 @@ namespace Presentation.ChildForms
             this.Close();
         }
         #endregion
+
+        private void savepaciente()
+        {
+
+        }
+
+        private void savemedico()
+        {
+
+        }
+
+        private void cmbPosition_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbPosition.Text == "Medico")
+            {
+                panelcomun.Enabled = true;
+                panelmedico.Enabled = true;
+                panelpaci.Enabled = false;
+            }
+            else if (cmbPosition.Text == "Paciente")
+            {
+                panelcomun.Enabled = true;
+                panelpaci.Enabled = true;
+                panelmedico.Enabled = false;
+            }
+            else
+            {
+                panelcomun.Enabled = false;
+                panelmedico.Enabled = false;
+                panelpaci.Enabled = false;
+            }
+        }
     }
 }

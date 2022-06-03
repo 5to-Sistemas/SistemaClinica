@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common;
+using System.Data.SqlClient;
 
 namespace Presentation.ChildForms
 {
@@ -20,6 +22,8 @@ namespace Presentation.ChildForms
         {
             InitializeComponent();
             ListUsers();
+            cmbxfiltrousers.DataSource = FilterUser.GetFilter();
+            cmbxtypesuser.DataSource = Positions.GetPositions();
         }
 
         private void ListUsers()
@@ -91,6 +95,74 @@ namespace Presentation.ChildForms
             }
             else
                 MessageBox.Show("Por favor seleccione una fila", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void txbfiltrouser_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbxtypesuser.Text == "")
+                {
+                    SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                    string query = "select * from Users where " + cmbxfiltrousers.Text + " like '%" + txbfiltrouser.Text + "%'";
+                    SqlDataAdapter ada = new SqlDataAdapter(query, con);
+
+                    con.Open();
+
+                    DataSet data = new DataSet();
+
+                    ada.Fill(data, "Users");
+
+                    dataGridView1.DataSource = data;
+                    dataGridView1.DataMember = "Users";
+                }
+                else
+                {
+                    SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                    //string query = "select * from Users where position like 'Administrador Del Sistema' and userName like '%adm%'";
+                    string query = "select * from Users where position like '" + cmbxtypesuser.Text +"' and " + cmbxfiltrousers.Text + " like '%" + txbfiltrouser.Text + "%'";
+                    SqlDataAdapter ada = new SqlDataAdapter(query, con);
+
+                    con.Open();
+
+                    DataSet data = new DataSet();
+
+                    ada.Fill(data, "Users");
+
+                    dataGridView1.DataSource = data;
+                    dataGridView1.DataMember = "Users";
+                }
+                
+            }
+            catch
+            {
+                
+            }
+            
+        }
+
+        private void cmbxtypesuser_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbxtypesuser.Text == "")
+            {
+
+            }
+            else
+            {
+                SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                //string query = "select * from Users where position like 'Administrador Del Sistema' and userName like '%adm%'";
+                string query = "select * from Users where position like '" + cmbxtypesuser.Text + "'";
+                SqlDataAdapter ada = new SqlDataAdapter(query, con);
+
+                con.Open();
+
+                DataSet data = new DataSet();
+
+                ada.Fill(data, "Users");
+
+                dataGridView1.DataSource = data;
+                dataGridView1.DataMember = "Users";
+            }
         }
     }
 }

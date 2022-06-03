@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveUser.cs" />
+    <Compile Include="FilterUser.cs" />
     <Compile Include="FiltroCita.cs" />
     <Compile Include="FiltroPaciente.cs" />
     <Compile Include="Positions.cs" />

@@ -15,7 +15,7 @@ namespace Common
         /// una tabla de cargos en la base de datos, puedes hacerlo
         /// mediante enumeraciones y el ID de los cargos.
         /// </summary>
-
+        public const string vacio = "";
         public const string Medico = "Medico";
         public const string Enfermera = "Enfermera";
         public const string Paciente = "Paciente";
@@ -28,6 +28,7 @@ namespace Common
         {//Método para listar los cargos. Se usa para establece la fuente de datos
             //del ComboBox en el formulario usuario de la capa de interfaz de usuario.
             var positions = new List<string>();
+            positions.Add(vacio);
             positions.Add(Medico);
             positions.Add(Enfermera);
             positions.Add(Paciente);

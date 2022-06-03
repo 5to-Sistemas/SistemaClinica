@@ -38,12 +38,10 @@
             this.btnChildFormClose = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnDoctors = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnCalendar = new System.Windows.Forms.Button();
             this.btnHistory = new System.Windows.Forms.Button();
-            this.btnPacients = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.panelMenuHeader = new System.Windows.Forms.Panel();
             this.lblLastName = new System.Windows.Forms.Label();
@@ -168,12 +166,10 @@
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(100)))));
             this.panelSideMenu.Controls.Add(this.btnDashboard);
-            this.panelSideMenu.Controls.Add(this.btnDoctors);
             this.panelSideMenu.Controls.Add(this.btnLogout);
             this.panelSideMenu.Controls.Add(this.btnReports);
             this.panelSideMenu.Controls.Add(this.btnCalendar);
             this.panelSideMenu.Controls.Add(this.btnHistory);
-            this.panelSideMenu.Controls.Add(this.btnPacients);
             this.panelSideMenu.Controls.Add(this.btnUsers);
             this.panelSideMenu.Controls.Add(this.panelMenuHeader);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -191,7 +187,7 @@
             this.btnDashboard.ForeColor = System.Drawing.Color.DarkGray;
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 412);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 331);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -202,27 +198,6 @@
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // btnDoctors
-            // 
-            this.btnDoctors.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDoctors.FlatAppearance.BorderSize = 0;
-            this.btnDoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoctors.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoctors.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnDoctors.Image = ((System.Drawing.Image)(resources.GetObject("btnDoctors.Image")));
-            this.btnDoctors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoctors.Location = new System.Drawing.Point(0, 232);
-            this.btnDoctors.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDoctors.Name = "btnDoctors";
-            this.btnDoctors.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDoctors.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDoctors.Size = new System.Drawing.Size(230, 45);
-            this.btnDoctors.TabIndex = 26;
-            this.btnDoctors.Text = "  Medicos";
-            this.btnDoctors.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDoctors.UseVisualStyleBackColor = true;
-            this.btnDoctors.Click += new System.EventHandler(this.btnDoctors_Click);
-            // 
             // btnLogout
             // 
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -232,7 +207,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.DarkGray;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 457);
+            this.btnLogout.Location = new System.Drawing.Point(0, 376);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -252,7 +227,7 @@
             this.btnReports.ForeColor = System.Drawing.Color.DarkGray;
             this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(1, 367);
+            this.btnReports.Location = new System.Drawing.Point(1, 286);
             this.btnReports.Margin = new System.Windows.Forms.Padding(2);
             this.btnReports.Name = "btnReports";
             this.btnReports.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -272,7 +247,7 @@
             this.btnCalendar.ForeColor = System.Drawing.Color.DarkGray;
             this.btnCalendar.Image = ((System.Drawing.Image)(resources.GetObject("btnCalendar.Image")));
             this.btnCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalendar.Location = new System.Drawing.Point(1, 322);
+            this.btnCalendar.Location = new System.Drawing.Point(1, 241);
             this.btnCalendar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -292,7 +267,7 @@
             this.btnHistory.ForeColor = System.Drawing.Color.DarkGray;
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
             this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(1, 277);
+            this.btnHistory.Location = new System.Drawing.Point(1, 196);
             this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -302,27 +277,6 @@
             this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHistory.UseVisualStyleBackColor = true;
             this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
-            // 
-            // btnPacients
-            // 
-            this.btnPacients.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPacients.FlatAppearance.BorderSize = 0;
-            this.btnPacients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPacients.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPacients.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnPacients.Image = ((System.Drawing.Image)(resources.GetObject("btnPacients.Image")));
-            this.btnPacients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPacients.Location = new System.Drawing.Point(0, 189);
-            this.btnPacients.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPacients.Name = "btnPacients";
-            this.btnPacients.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnPacients.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnPacients.Size = new System.Drawing.Size(230, 45);
-            this.btnPacients.TabIndex = 21;
-            this.btnPacients.Text = "  Pacientes";
-            this.btnPacients.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPacients.UseVisualStyleBackColor = true;
-            this.btnPacients.Click += new System.EventHandler(this.btnPacients_Click);
             // 
             // btnUsers
             // 
@@ -554,7 +508,6 @@
         internal System.Windows.Forms.Button btnReports;
         internal System.Windows.Forms.Button btnCalendar;
         internal System.Windows.Forms.Button btnHistory;
-        internal System.Windows.Forms.Button btnPacients;
         internal System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Panel panelMenuHeader;
         internal System.Windows.Forms.Label lblLastName;
@@ -570,7 +523,6 @@
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnClose;
         internal System.Windows.Forms.Button btnDashboard;
-        internal System.Windows.Forms.Button btnDoctors;
     }
 }
 
