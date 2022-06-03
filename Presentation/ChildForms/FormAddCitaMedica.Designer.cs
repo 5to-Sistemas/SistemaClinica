@@ -45,50 +45,45 @@
             // lblEspecialidad
             // 
             this.lblEspecialidad.AutoSize = true;
-            this.lblEspecialidad.Location = new System.Drawing.Point(117, 129);
-            this.lblEspecialidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEspecialidad.Location = new System.Drawing.Point(78, 84);
             this.lblEspecialidad.Name = "lblEspecialidad";
-            this.lblEspecialidad.Size = new System.Drawing.Size(99, 20);
+            this.lblEspecialidad.Size = new System.Drawing.Size(67, 13);
             this.lblEspecialidad.TabIndex = 1;
             this.lblEspecialidad.Text = "Especialidad";
             // 
             // lblMedico
             // 
             this.lblMedico.AutoSize = true;
-            this.lblMedico.Location = new System.Drawing.Point(162, 198);
-            this.lblMedico.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMedico.Location = new System.Drawing.Point(108, 129);
             this.lblMedico.Name = "lblMedico";
-            this.lblMedico.Size = new System.Drawing.Size(60, 20);
+            this.lblMedico.Size = new System.Drawing.Size(42, 13);
             this.lblMedico.TabIndex = 2;
             this.lblMedico.Text = "Medico";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(162, 268);
-            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFecha.Location = new System.Drawing.Point(108, 174);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(54, 20);
+            this.lblFecha.Size = new System.Drawing.Size(37, 13);
             this.lblFecha.TabIndex = 3;
             this.lblFecha.Text = "Fecha";
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(162, 323);
-            this.lblHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHora.Location = new System.Drawing.Point(108, 210);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(48, 20);
+            this.lblHora.Size = new System.Drawing.Size(33, 13);
             this.lblHora.TabIndex = 4;
             this.lblHora.Text = "Hora:";
             // 
             // lblSintomas
             // 
             this.lblSintomas.AutoSize = true;
-            this.lblSintomas.Location = new System.Drawing.Point(72, 388);
-            this.lblSintomas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSintomas.Location = new System.Drawing.Point(48, 252);
             this.lblSintomas.Name = "lblSintomas";
-            this.lblSintomas.Size = new System.Drawing.Size(153, 20);
+            this.lblSintomas.Size = new System.Drawing.Size(102, 13);
             this.lblSintomas.TabIndex = 5;
             this.lblSintomas.Text = "Sintomas (opcional):";
             // 
@@ -96,10 +91,16 @@
             // 
             this.cbxEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxEspecialidad.FormattingEnabled = true;
-            this.cbxEspecialidad.Location = new System.Drawing.Point(254, 125);
-            this.cbxEspecialidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbxEspecialidad.Items.AddRange(new object[] {
+            "Pediatra",
+            "Cardiologo",
+            "General",
+            "Traumatologo",
+            "Dermatologo",
+            "Ginecologo"});
+            this.cbxEspecialidad.Location = new System.Drawing.Point(169, 81);
             this.cbxEspecialidad.Name = "cbxEspecialidad";
-            this.cbxEspecialidad.Size = new System.Drawing.Size(298, 28);
+            this.cbxEspecialidad.Size = new System.Drawing.Size(200, 21);
             this.cbxEspecialidad.TabIndex = 6;
             this.cbxEspecialidad.SelectedIndexChanged += new System.EventHandler(this.cbxEspecialidad_SelectedIndexChanged);
             // 
@@ -107,37 +108,50 @@
             // 
             this.cbxMedico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMedico.FormattingEnabled = true;
-            this.cbxMedico.Location = new System.Drawing.Point(254, 186);
-            this.cbxMedico.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbxMedico.Items.AddRange(new object[] {
+            "Carlos Chavez",
+            "Eduardo Rivero",
+            "Maximiliano Farfan",
+            "Santiago Paz"});
+            this.cbxMedico.Location = new System.Drawing.Point(169, 121);
             this.cbxMedico.Name = "cbxMedico";
-            this.cbxMedico.Size = new System.Drawing.Size(298, 28);
+            this.cbxMedico.Size = new System.Drawing.Size(200, 21);
             this.cbxMedico.TabIndex = 7;
+            this.cbxMedico.SelectedIndexChanged += new System.EventHandler(this.cbxMedico_SelectedIndexChanged);
             // 
             // cbxHora
             // 
             this.cbxHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxHora.FormattingEnabled = true;
-            this.cbxHora.Location = new System.Drawing.Point(254, 318);
-            this.cbxHora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbxHora.Items.AddRange(new object[] {
+            "7:00 am - 7.45 am",
+            "8:00 am - 8.45 am",
+            "9:00 am - 9.45 am",
+            "10:00 am - 10.45 am",
+            "11:00 am - 11.45 am",
+            "2:00 pm - 2.45 pm",
+            "3:00 pm - 3.45 pm",
+            "4:00 pm - 4.45 pm"});
+            this.cbxHora.Location = new System.Drawing.Point(169, 207);
             this.cbxHora.Name = "cbxHora";
-            this.cbxHora.Size = new System.Drawing.Size(222, 28);
+            this.cbxHora.Size = new System.Drawing.Size(149, 21);
             this.cbxHora.TabIndex = 8;
+            this.cbxHora.SelectedIndexChanged += new System.EventHandler(this.cbxHora_SelectedIndexChanged);
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(254, 268);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpFecha.Location = new System.Drawing.Point(169, 174);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(298, 26);
+            this.dtpFecha.Size = new System.Drawing.Size(200, 20);
             this.dtpFecha.TabIndex = 9;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
             // 
             // txtSintomas
             // 
-            this.txtSintomas.Location = new System.Drawing.Point(254, 388);
-            this.txtSintomas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSintomas.Location = new System.Drawing.Point(169, 252);
             this.txtSintomas.Multiline = true;
             this.txtSintomas.Name = "txtSintomas";
-            this.txtSintomas.Size = new System.Drawing.Size(270, 141);
+            this.txtSintomas.Size = new System.Drawing.Size(181, 93);
             this.txtSintomas.TabIndex = 10;
             // 
             // btnCancel
@@ -147,10 +161,9 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(272, 635);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.Location = new System.Drawing.Point(181, 413);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(225, 62);
+            this.btnCancel.Size = new System.Drawing.Size(150, 40);
             this.btnCancel.TabIndex = 129;
             this.btnCancel.Text = "X  Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -163,10 +176,9 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(534, 635);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSave.Location = new System.Drawing.Point(356, 413);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(225, 62);
+            this.btnSave.Size = new System.Drawing.Size(150, 40);
             this.btnSave.TabIndex = 130;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -174,9 +186,9 @@
             // 
             // FormAddCitaMedica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 780);
+            this.ClientSize = new System.Drawing.Size(550, 507);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtSintomas);
@@ -189,9 +201,7 @@
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblMedico);
             this.Controls.Add(this.lblEspecialidad);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormAddCitaMedica";
-            this.Padding = new System.Windows.Forms.Padding(2);
             this.Text = "Añadir cita medica";
             this.Load += new System.EventHandler(this.FormAddCitaMedica_Load);
             this.Controls.SetChildIndex(this.lblEspecialidad, 0);

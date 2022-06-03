@@ -27,3 +27,9 @@ C:\Users\Hp\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.csprojAssemb
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.dll
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Common\obj\Debug\Common.pdb
+D:\GitHub\SistemaClinica\Common\bin\Debug\Common.dll
+D:\GitHub\SistemaClinica\Common\bin\Debug\Common.pdb
+D:\GitHub\SistemaClinica\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\GitHub\SistemaClinica\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\GitHub\SistemaClinica\Common\obj\Debug\Common.dll
+D:\GitHub\SistemaClinica\Common\obj\Debug\Common.pdb

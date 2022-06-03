@@ -15,16 +15,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          Opciones del manifiesto de Control de cuentas de usuario
-          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
-          nodo requestedExecutionLevel por alguno de los siguientes.
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Si desea usar la virtualización de archivos y del Registro para la
-         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -62,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JoDuDvT3XYTdQHGFx8OOsYEZ3iXR6Xcgd2BQyDge3WQ=</dsig:DigestValue>
+        <dsig:DigestValue>AAAQRf+S/J9zKYtP8/ZGQSQe2Ux0/Wc1vqMWOlCMvA4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccess.dll" size="31744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccess.dll" size="34304">
       <assemblyIdentity name="DataAccess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HDz1B5LzxyEy5MCHa3gvqas7iQGqRmQbqiX7eWByums=</dsig:DigestValue>
+        <dsig:DigestValue>6pKPsPt537WtRh4YcjzcY61VcnTC/Q+bvi8sldvjins=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,19 +86,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>g6P3CSvr2JjViu6Wv3Uvc+7jfE1dCm2pEBKZhWTUsug=</dsig:DigestValue>
+        <dsig:DigestValue>SGzbls1gufl0g5eo/Eb+rLFX8iC4K8YqNK35FRPBq/A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="670720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="675328">
       <assemblyIdentity name="SAPS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JzwO2D9YLB6BQZFmSXSJXVgw/l3szhAaWqf3/w33m3Y=</dsig:DigestValue>
+        <dsig:DigestValue>+spY33ph8jnyyK6mEWuL3rZmZ8kkvn2XcU9iTPCpgEg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -132,13 +132,13 @@
       <dsig:DigestValue>g2Y/qmgrBDF5mbgC4IyNi/nylzMPFy48I23z56GkgfI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SAPS.exe.config" size="491">
+  <file name="SAPS.exe.config" size="477">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0Eb1xcycv7Y5RocjTWa7fC11k5LYGQrFpB0CCCesyBY=</dsig:DigestValue>
+      <dsig:DigestValue>PSzZut25tUM+pnAS8ExKs6cHZU3D51bwaxs3oS22CJw=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

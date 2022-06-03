@@ -20,7 +20,7 @@ namespace Datos
         {
             try
             {
-                cadenaconexion = "Data Source=LAPTOP-ANDRES\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True";
+                cadenaconexion = "Data Source=PCEDU;Initial Catalog=SAPSDB;Integrated Security=True";
                 conex = new SqlConnection(cadenaconexion);
                 conex.Open();
 

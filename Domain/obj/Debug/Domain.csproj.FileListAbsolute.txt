@@ -51,3 +51,14 @@ C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CoreC
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CopyComplete
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.dll
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Domain\obj\Debug\Domain.pdb
+D:\GitHub\SistemaClinica\Domain\bin\Debug\Domain.dll
+D:\GitHub\SistemaClinica\Domain\bin\Debug\Domain.pdb
+D:\GitHub\SistemaClinica\Domain\bin\Debug\Common.dll
+D:\GitHub\SistemaClinica\Domain\bin\Debug\DataAccess.dll
+D:\GitHub\SistemaClinica\Domain\bin\Debug\Common.pdb
+D:\GitHub\SistemaClinica\Domain\bin\Debug\DataAccess.pdb
+D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CopyComplete
+D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.dll
+D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.pdb
