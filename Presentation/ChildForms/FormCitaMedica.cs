@@ -29,7 +29,7 @@ namespace Presentation.ChildForms
         {
             // TODO: This line of code loads data into the 'sAPSDBDataSet.citamedica' table. You can move, or remove it, as needed.
             cx.AbrirConexion();
-            dgvCitas.DataSource = cm.SelectAll(dgvCitas).Tables[0];
+            dgvCitas.DataSource = cm.SelectByDate(dgvCitas,DateTime.Now).Tables[0];
             if (dgvCitas.Rows.Count == 0)
             {
                 lblInfoCitasHoy.Text = "Usted no tiene citas programadas para hoy.";

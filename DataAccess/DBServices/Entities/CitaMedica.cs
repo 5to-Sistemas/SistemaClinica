@@ -26,5 +26,14 @@ namespace DataAccess.DBServices.Entities
             return ds;
         }
 
+        public DataSet SelectByDate(DataGridView table, DateTime fecha) {
+            cx.con = new SqlConnection(cx.cadenaConexion);
+            cx.adpt = new SqlDataAdapter("select * from citamedica where fecha='" + fecha +
+                "'", cx.con);
+            DataSet ds = new DataSet();
+            cx.adpt.Fill(ds);
+           return ds;
+        }
+
     }
 }
