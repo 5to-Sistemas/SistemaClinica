@@ -25,10 +25,14 @@ namespace Presentation.ChildForms
         {
             cbxEspecialidad.ValueMember = "especialidad";
             cbxEspecialidad.DisplayMember = "especialidad";
-            cbxEspecialidad.DataSource = m.SelectAll();
+            cbxEspecialidad.DataSource = m.SelectAll().Tables[0];
             cbxMedico.ValueMember = "idmedico";
             cbxMedico.DisplayMember = "idmedico";
-            cbxMedico.DataSource = m.SelectAll();
+            cbxMedico.DataSource = m.SelectAll().Tables[0];
+            cbxHora.ValueMember = "HorarioInicio";
+            cbxHora.DisplayMember = "HorarioIncio";
+            cbxHora.DataSource = m.SelectAll().Tables[0];
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -46,6 +50,9 @@ namespace Presentation.ChildForms
             Close();
         }
 
+        private void cbxEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

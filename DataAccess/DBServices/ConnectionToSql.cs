@@ -25,8 +25,9 @@ namespace DataAccess.DBServices
         public ConnectionToSql()
         {
             //Establecer la cadena de conexión.
-            cadenaConexion = "data source=DESKTOP-793T557\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true";
-            con = new SqlConnection(@"data source=DESKTOP-793T557\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true");
+            cadenaConexion = "data source=AR13L\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true";
+            con = new SqlConnection(@"data source=AR13L
+\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true");
         }
         protected SqlConnection GetConnection()
         {
