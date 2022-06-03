@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common;
 using System.Data.SqlClient;
+using CapaDatos;
 
 namespace Presentation.ChildForms
 {
@@ -17,6 +18,8 @@ namespace Presentation.ChildForms
     {
         private UserModel userModel = new UserModel();
         private List<UserModel> userList;
+
+        public ConexionSQL strincone = new ConexionSQL();
 
         public FormUsers()
         {
@@ -103,7 +106,7 @@ namespace Presentation.ChildForms
             {
                 if (cmbxtypesuser.Text == "")
                 {
-                    SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                    SqlConnection con = new SqlConnection(strincone.getstringconexion());
                     string query = "select * from Users where " + cmbxfiltrousers.Text + " like '%" + txbfiltrouser.Text + "%'";
                     SqlDataAdapter ada = new SqlDataAdapter(query, con);
 
@@ -115,10 +118,11 @@ namespace Presentation.ChildForms
 
                     dataGridView1.DataSource = data;
                     dataGridView1.DataMember = "Users";
+                    con.Close();
                 }
                 else
                 {
-                    SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                    SqlConnection con = new SqlConnection(strincone.getstringconexion());
                     //string query = "select * from Users where position like 'Administrador Del Sistema' and userName like '%adm%'";
                     string query = "select * from Users where position like '" + cmbxtypesuser.Text +"' and " + cmbxfiltrousers.Text + " like '%" + txbfiltrouser.Text + "%'";
                     SqlDataAdapter ada = new SqlDataAdapter(query, con);
@@ -131,6 +135,7 @@ namespace Presentation.ChildForms
 
                     dataGridView1.DataSource = data;
                     dataGridView1.DataMember = "Users";
+                    con.Close();
                 }
                 
             }
@@ -149,7 +154,7 @@ namespace Presentation.ChildForms
             }
             else
             {
-                SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                SqlConnection con = new SqlConnection(strincone.getstringconexion());
                 //string query = "select * from Users where position like 'Administrador Del Sistema' and userName like '%adm%'";
                 string query = "select * from Users where position like '" + cmbxtypesuser.Text + "'";
                 SqlDataAdapter ada = new SqlDataAdapter(query, con);
@@ -162,6 +167,7 @@ namespace Presentation.ChildForms
 
                 dataGridView1.DataSource = data;
                 dataGridView1.DataMember = "Users";
+                con.Close();
             }
         }
     }

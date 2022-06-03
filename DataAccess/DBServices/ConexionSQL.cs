@@ -10,7 +10,8 @@ namespace CapaDatos
 {
     public class ConexionSQL
     {
-        private SqlConnection Conexion = new SqlConnection("Data Source=AR13L\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True");
+        public string stringcone = "Data Source=DESKTOP-793T557\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True";
+        public SqlConnection Conexion = new SqlConnection("Data Source=DESKTOP-793T557\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True");
 
         public SqlConnection AbrirConexion()
         {
@@ -25,6 +26,11 @@ namespace CapaDatos
             if (Conexion.State == ConnectionState.Open)
                 Conexion.Close();
             return Conexion;
+        }
+
+        public string getstringconexion()
+        {
+            return stringcone;
         }
     }
 }

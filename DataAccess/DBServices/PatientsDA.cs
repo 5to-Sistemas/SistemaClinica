@@ -130,6 +130,7 @@ namespace DataAccess.DBServices
             comando.Parameters.AddWithValue("@estado", estado);
 
             comando.ExecuteNonQuery();
+            
 
             comando.Parameters.Clear();
         }
@@ -143,8 +144,26 @@ namespace DataAccess.DBServices
             comando.Parameters.AddWithValue("@idpaciente", idpaciente);
 
             comando.ExecuteNonQuery();
+            
 
             comando.Parameters.Clear();
+        }
+
+
+        public int existepaci(string userName)
+        {
+            DataTable dt = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "update Users set userName=@userName where userName=@userName";
+            comando.CommandType = CommandType.Text;
+            comando.Parameters.Clear();
+            comando.Parameters.AddWithValue("@userName", userName);
+            leer = comando.ExecuteReader();
+            dt.Load(leer);
+            int ret = comando.ExecuteNonQuery();
+
+            conexion.CerrarConexion();
+            return ret;
         }
 
     }

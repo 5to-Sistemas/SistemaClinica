@@ -24,7 +24,7 @@ namespace Domain
         {
 
             DataTable tabla = new DataTable();
-            tabla = objetoCD.obtenertablade1medico(Convert.ToInt16(idmed));
+            tabla = objetoCD.obtenertablade1medico(Convert.ToInt32(idmed));
             return tabla;
         }
 
@@ -33,7 +33,7 @@ namespace Domain
         {
 
             DataTable tabla = new DataTable();
-            tabla = objetoCD.obtenertablade1usuario(Convert.ToInt16(IDUSER));
+            tabla = objetoCD.obtenertablade1usuario(Convert.ToInt32(IDUSER));
             return tabla;
         }
 
@@ -45,13 +45,13 @@ namespace Domain
         public void Insertar(string idmedico, string ci, string direccion, string telefono, string diahabiles, string HorarioInicio, string HorarioFin, string especialidad, string sexo)
         {
 
-            objetoCD.Insertar(Convert.ToInt16(idmedico), Convert.ToInt16(ci), direccion, Convert.ToInt16(telefono), diahabiles, HorarioInicio, HorarioFin, especialidad, sexo);
+            objetoCD.Insertar(Convert.ToInt32(idmedico), Convert.ToInt32(ci), direccion, Convert.ToInt32(telefono), diahabiles, HorarioInicio, HorarioFin, especialidad, sexo);
         }
 
         public void Editar(string idmedico, string ci, string direccion, string telefono, string diahabiles, string HorarioInicio, string HorarioFin, string especialidad, string sexo)
         {
 
-            objetoCD.Editar(Convert.ToInt16(idmedico), Convert.ToInt16(ci), direccion, Convert.ToInt16(telefono), diahabiles, HorarioInicio, HorarioFin, especialidad, sexo);
+            objetoCD.Editar(Convert.ToInt32(idmedico), Convert.ToInt32(ci), direccion, Convert.ToInt32(telefono), diahabiles, HorarioInicio, HorarioFin, especialidad, sexo);
         }
 
         public void Eliminar(string id)
