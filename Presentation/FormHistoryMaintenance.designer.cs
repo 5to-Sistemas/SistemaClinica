@@ -32,6 +32,8 @@ namespace Presentacion
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnmedicamentos = new System.Windows.Forms.Button();
+            this.btnreportes = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
             this.cmbxfiltrocita = new System.Windows.Forms.ComboBox();
             this.txbestadocivil = new System.Windows.Forms.TextBox();
@@ -108,8 +110,6 @@ namespace Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.citamedicaTableAdapter = new Presentation.SAPSDBDataSetTableAdapters.citamedicaTableAdapter();
-            this.btnreportes = new System.Windows.Forms.Button();
-            this.btnmedicamentos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DBVcitasmedicas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.citamedicaBindingSource)).BeginInit();
@@ -190,10 +190,32 @@ namespace Presentacion
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(1, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1082, 729);
+            this.panel1.Size = new System.Drawing.Size(1082, 728);
             this.panel1.TabIndex = 0;
+            // 
+            // btnmedicamentos
+            // 
+            this.btnmedicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmedicamentos.Location = new System.Drawing.Point(765, 557);
+            this.btnmedicamentos.Name = "btnmedicamentos";
+            this.btnmedicamentos.Size = new System.Drawing.Size(147, 45);
+            this.btnmedicamentos.TabIndex = 81;
+            this.btnmedicamentos.Text = "MEDICAMENTOS";
+            this.btnmedicamentos.UseVisualStyleBackColor = true;
+            this.btnmedicamentos.Click += new System.EventHandler(this.btnmedicamentos_Click);
+            // 
+            // btnreportes
+            // 
+            this.btnreportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreportes.Location = new System.Drawing.Point(918, 557);
+            this.btnreportes.Name = "btnreportes";
+            this.btnreportes.Size = new System.Drawing.Size(147, 45);
+            this.btnreportes.TabIndex = 80;
+            this.btnreportes.Text = "REPORTES";
+            this.btnreportes.UseVisualStyleBackColor = true;
+            this.btnreportes.Click += new System.EventHandler(this.btnreportes_Click);
             // 
             // label30
             // 
@@ -875,33 +897,11 @@ namespace Presentacion
             // 
             this.citamedicaTableAdapter.ClearBeforeFill = true;
             // 
-            // btnreportes
-            // 
-            this.btnreportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreportes.Location = new System.Drawing.Point(918, 557);
-            this.btnreportes.Name = "btnreportes";
-            this.btnreportes.Size = new System.Drawing.Size(147, 45);
-            this.btnreportes.TabIndex = 80;
-            this.btnreportes.Text = "REPORTES";
-            this.btnreportes.UseVisualStyleBackColor = true;
-            this.btnreportes.Click += new System.EventHandler(this.btnreportes_Click);
-            // 
-            // btnmedicamentos
-            // 
-            this.btnmedicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmedicamentos.Location = new System.Drawing.Point(765, 557);
-            this.btnmedicamentos.Name = "btnmedicamentos";
-            this.btnmedicamentos.Size = new System.Drawing.Size(147, 45);
-            this.btnmedicamentos.TabIndex = 81;
-            this.btnmedicamentos.Text = "MEDICAMENTOS";
-            this.btnmedicamentos.UseVisualStyleBackColor = true;
-            this.btnmedicamentos.Click += new System.EventHandler(this.btnmedicamentos_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 731);
+            this.ClientSize = new System.Drawing.Size(1084, 770);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";

@@ -29,6 +29,8 @@ namespace Presentacion
         private string IDpaci = null;
         private string IDmedi = null;
 
+        ConexionSQL conexi = new ConexionSQL();
+
         CitaMedica cm ;
 
         public Form1()
@@ -37,6 +39,7 @@ namespace Presentacion
             cmbxtipoatencion.DataSource = TipoAtencion.GetTypes();
             cmbxfiltrocita.DataSource = FiltroCita.GetFilter();
             cm = new CitaMedica();
+            
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
@@ -310,7 +313,7 @@ namespace Presentacion
         {
             try
             {
-                SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                SqlConnection con = new SqlConnection(conexi.stringcone);
                 string query = "select * from citamedica where " + cmbxfiltrocita.Text + " like '%" + txbfiltrocitamedica.Text + "%'";
                 SqlDataAdapter ada = new SqlDataAdapter(query, con);
 

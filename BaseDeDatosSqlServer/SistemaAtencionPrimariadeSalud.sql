@@ -167,7 +167,13 @@ insert into citamedica values('7','4','2022-05-13','11:15','dolor en las costill
 insert into citamedica values('8','3','2022-05-14','12:15','irritacion de epidermis')
 insert into citamedica values('9','2','2022-05-14','15:15','sudoracion excesiva')
 insert into citamedica values('10','4','2022-05-15','16:00','desmayo')
-insert into citamedica values('11','3','2022-05-16','18:15','ardor en el cuello')
+insert into citamedica values('11','4','2022-05-16','18:15','ardor en el cuello')
+insert into citamedica values('7','4','2022-05-12','11:15','dolor abdominal')
+insert into citamedica values('6','2','2022-05-12','12:35','dolor lumbar')
+insert into citamedica values('6','2','2022-05-12','14:10','escalofrios prolongados')
+insert into citamedica values('7','3','2022-05-13','11:15','dolor en las costillas')
+insert into citamedica values('6','2','2022-05-14','12:15','irritacion de epidermis')
+insert into citamedica values('9','4','2022-05-14','15:15','sudoracion excesiva')
 GO
 
 

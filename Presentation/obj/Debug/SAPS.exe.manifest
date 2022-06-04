@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccess.dll" size="34304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccess.dll" size="34816">
       <assemblyIdentity name="DataAccess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>APbheEVz3aSVjspiO945j4i0K3YcsnFWbyNpcg5SKls=</dsig:DigestValue>
+        <dsig:DigestValue>aAPkVCR1pMKIl8S1MMIOw1wxPFXpTK3BatJuGH+w4eo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,19 +86,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JoqkhZRAY0m7sxY6Um3l55rDcGA/oiAB7KGf2YCt6rc=</dsig:DigestValue>
+        <dsig:DigestValue>+m2jBAwpXwKMf8A7s8Jb7Ggvmkflv6QpRLy+vELTF8I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="675840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="676352">
       <assemblyIdentity name="SAPS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/SMG9Itbb782HCd/vA8bil3Uf6gAU92HgIS0SNJ0R5M=</dsig:DigestValue>
+        <dsig:DigestValue>Mjjb2c0BGJtTXHSNHcqkgIfM6ThDd8W0ZsiCXxB7mjU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
