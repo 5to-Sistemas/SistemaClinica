@@ -50,3 +50,12 @@ D:\GitHub\SistemaClinica\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInput
 D:\GitHub\SistemaClinica\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 D:\GitHub\SistemaClinica\DataAccess\obj\Debug\DataAccess.dll
 D:\GitHub\SistemaClinica\DataAccess\obj\Debug\DataAccess.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\bin\Debug\DataAccess.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\bin\Debug\DataAccess.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\bin\Debug\Common.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\bin\Debug\Common.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\obj\Debug\DataAccess.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\DataAccess\obj\Debug\DataAccess.pdb

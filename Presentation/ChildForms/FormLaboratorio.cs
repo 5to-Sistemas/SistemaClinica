@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DataAccess.DBServices.Entities;
 namespace Presentation.ChildForms
 {
-    public partial class FormLaboratorio : Form
+    public partial class FormLaboratorio : BaseForms.BaseFixedForm
     {
         Datos.Conexion objConexion = new Datos.Conexion();
         Laboratorio objLaboratorio = new Laboratorio();

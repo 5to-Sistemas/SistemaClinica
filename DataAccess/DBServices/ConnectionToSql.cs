@@ -25,8 +25,8 @@ namespace DataAccess.DBServices
         public ConnectionToSql()
         {
             //Establecer la cadena de conexión.
-            cadenaConexion = "data source=DESKTOP-793T557\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true";
-            con = new SqlConnection(@"data source=DESKTOP-793T557\\SQLEXPRESS;initial catalog=SAPSDB;Integrated Security=true");
+            cadenaConexion = "data source=CHEBI\\CHEBISQL;initial catalog=SAPSDB;Integrated Security=true";
+            con = new SqlConnection(@"data source=CHEBI\\CHEBISQL;initial catalog=SAPSDB;Integrated Security=true");
         }
         protected SqlConnection GetConnection()
         {
