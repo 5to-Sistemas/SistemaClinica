@@ -132,6 +132,13 @@
             // cmbxfiltrohisto
             // 
             this.cmbxfiltrohisto.FormattingEnabled = true;
+            this.cmbxfiltrohisto.Items.AddRange(new object[] {
+            "tipodeatencion",
+            "presionarterial",
+            "temperatura",
+            "peso",
+            "estatura",
+            "frecuenciacardiaca"});
             this.cmbxfiltrohisto.Location = new System.Drawing.Point(478, 37);
             this.cmbxfiltrohisto.Name = "cmbxfiltrohisto";
             this.cmbxfiltrohisto.Size = new System.Drawing.Size(121, 21);

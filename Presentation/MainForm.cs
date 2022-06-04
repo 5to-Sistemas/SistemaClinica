@@ -74,7 +74,7 @@ namespace Presentation
                     btnUsers.Enabled = false;
                     
                     btnReports.Enabled = false;
-                    btnDashboard.Enabled = false;
+                    // btnDashboard.Enabled = false;
                     break;
                 /*case Positions.Enfermera:
                     btnUsers.Enabled = false;

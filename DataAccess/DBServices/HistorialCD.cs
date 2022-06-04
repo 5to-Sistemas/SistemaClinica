@@ -29,6 +29,23 @@ namespace CapaDatos
             
             
         }
+
+        public DataTable Mostrarcitas()
+        {
+
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT * FROM citamedica";
+            comando.CommandType = CommandType.Text;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+            return tabla;
+
+
+
+        }
+
+
         public DataTable Mostrar(int idhistory)
         {
 

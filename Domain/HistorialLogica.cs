@@ -19,6 +19,14 @@ namespace CapaNegocio
             tabla = objetoCD.Mostrar();
             return tabla;
         }
+
+        public DataTable Mostrarcitas()
+        {
+
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.Mostrarcitas();
+            return tabla;
+        }
         public DataTable MostrarH(string idhistorial)
         {
 

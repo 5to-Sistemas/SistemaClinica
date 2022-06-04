@@ -20,7 +20,7 @@ namespace Datos
         {
             try
             {
-                cadenaconexion = "Data Source=CHEBI\\CHEBISQL;Initial Catalog=SAPSDB;Integrated Security=True";
+                cadenaconexion = "Data Source=DESKTOP-793T557\\SQLEXPRESS;Initial Catalog=SAPSDB;Integrated Security=True";
                 conex = new SqlConnection(cadenaconexion);
                 conex.Open();
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaDatos;
+using CapaNegocio;
 using DataAccess;
 using DataAccess.DBServices;
 using DataAccess.DBServices.Entities;
@@ -18,11 +19,13 @@ namespace Presentation.ChildForms
     {
         ConexionSQL cx;
         CitaMedica cm;
+        HistorialLogica hismo = new HistorialLogica();
         public FormCitaMedica()
         {
             InitializeComponent();
             cx = new ConexionSQL();
             cm = new CitaMedica();
+            dgvCitas.DataSource = hismo.Mostrarcitas();   
         }
 
         private void FormCitaMedica_Load(object sender, EventArgs e)
@@ -43,7 +46,8 @@ namespace Presentation.ChildForms
                 btnEdit.Enabled = true;
                 btnRemove.Enabled = true;
             }
-            
+            dgvCitas.DataSource = hismo.Mostrarcitas();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
