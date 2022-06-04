@@ -157,18 +157,35 @@ namespace Presentation.ChildForms
                             if (cmbPosition.Text == "Medico")
                             {
                                 string iduser = medicmodel.obteneriddeuserbyusername(txtUsername.Text);
-                                medicmodel.Insertar(iduser, txbci.Text, txbdireccion.Text, txbtelefono.Text, txbdiashabi.Text, txbhoraini.Text, txbhorafin.Text, cmbxespecialidad.Text, cmbxsexo.Text);
-                                medicmodel.Editar(iduser, txbci.Text, txbdireccion.Text, txbtelefono.Text, txbdiashabi.Text, txbhoraini.Text, txbhorafin.Text, cmbxespecialidad.Text, cmbxsexo.Text);
+                                if (medicmodel.existemedico(iduser))
+                                {
+                                    medicmodel.Editar(iduser, txbci.Text, txbdireccion.Text, txbtelefono.Text, txbdiashabi.Text, txbhoraini.Text, txbhorafin.Text, cmbxespecialidad.Text, cmbxsexo.Text);
+                                }
+                                else
+                                {
+                                    medicmodel.Insertar(iduser, txbci.Text, txbdireccion.Text, txbtelefono.Text, txbdiashabi.Text, txbhoraini.Text, txbhorafin.Text, cmbxespecialidad.Text, cmbxsexo.Text);
+                                }
+                                
+                                
                                 
                                 
                                 
                             }
                             if (cmbPosition.Text == "Paciente")
                             {
-                                MessageBox.Show(pacientmodel.existepaciente(txtUsername.Text).ToString());
+                                
                                 string iduser = pacientmodel.obteneriddeuserbyusername(txtUsername.Text);
-                                pacientmodel.Insertar(iduser, txbci.Text, txbdireccion.Text, dtpfechanac.Value.ToString(), cmbxtiposangre.Text, txbtelefono.Text, cmbxsexo.Text, cmbxestadocivil.Text, cmbxstate.Text);
-                                pacientmodel.Editar(iduser, txbci.Text, txbdireccion.Text, dtpfechanac.Value.ToString(), cmbxtiposangre.Text, txbtelefono.Text, cmbxsexo.Text, cmbxestadocivil.Text, cmbxstate.Text);
+                                if (pacientmodel.existepaciente(iduser)) 
+                                {
+                                    pacientmodel.Editar(iduser, txbci.Text, txbdireccion.Text, dtpfechanac.Value.ToString(), cmbxtiposangre.Text, txbtelefono.Text, cmbxsexo.Text, cmbxestadocivil.Text, cmbxstate.Text);
+                                }
+                                else
+                                {
+                                    
+                                    pacientmodel.Insertar(iduser, txbci.Text, txbdireccion.Text, dtpfechanac.Value.ToString(), cmbxtiposangre.Text, txbtelefono.Text, cmbxsexo.Text, cmbxestadocivil.Text, cmbxstate.Text);
+                                }
+                                
+                                
 
                             }
                             MessageBox.Show("Usuario actualizado con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);

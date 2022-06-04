@@ -60,9 +60,16 @@ namespace Domain
             objetoCD.Eliminar(Convert.ToInt32(id));
         }
 
-        public int existepaciente(string username)
+        public bool existepaciente(string idpaciente)
         {
-            return objetoCD.existepaci(username);
+            if (objetoCD.existepaci(idpaciente)==1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
             
         }
 

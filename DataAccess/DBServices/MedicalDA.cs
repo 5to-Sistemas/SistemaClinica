@@ -147,5 +147,22 @@ namespace DataAccess.DBServices
             comando.Parameters.Clear();
         }
 
+
+        public int existemedico(string idmedico)
+        {
+            DataTable dt = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "update medico set idmedico=@idmedico where idmedico=@idmedico";
+            comando.CommandType = CommandType.Text;
+            comando.Parameters.Clear();
+            comando.Parameters.AddWithValue("@idmedico", idmedico);
+            leer = comando.ExecuteReader();
+            dt.Load(leer);
+            int ret = comando.ExecuteNonQuery();
+
+            conexion.CerrarConexion();
+            return ret;
+        }
+
     }
 }

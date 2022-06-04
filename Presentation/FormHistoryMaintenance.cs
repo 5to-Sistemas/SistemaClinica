@@ -15,6 +15,7 @@ using Common;
 using CapaDatos;
 using DataAccess.DBServices;
 using DataAccess.DBServices.Entities;
+using Presentation.ChildForms;
 
 namespace Presentacion
 {
@@ -287,10 +288,19 @@ namespace Presentacion
         {
             if (DGVhistorial.SelectedRows.Count > 0)
             {
-                IDhisto = DGVhistorial.CurrentRow.Cells["idHistoria"].Value.ToString();
-                objhistorialL.EliminarHistorial(IDhisto);
-                MessageBox.Show("Eliminado correctamente");
-                MostrarHistorialPaciente();
+                try
+                {
+                    IDhisto = DGVhistorial.CurrentRow.Cells["idHistoria"].Value.ToString();
+                    IDcita = DGVhistorial.CurrentRow.Cells["idcita"].Value.ToString();
+                    objhistorialL.EditarHistorial(cmbxtipoatencion.Text, txbpresionarte.Text, txbtempera.Text, txbpeso.Text, txbestatura.Text, txbfrecuencia.Text, txbantecedentes.Text, txbdiagnostic.Text, txbtratamiento.Text, txbdetalles.Text, IDcita, IDhisto);
+                    MessageBox.Show("Editado correctamente");
+                    MostrarHistorialPaciente();
+                }
+                catch
+                {
+                    MessageBox.Show("Editado Incorrectamente");
+                }
+                
             }
             else
                 MessageBox.Show("seleccione una fila por favor");
@@ -298,19 +308,39 @@ namespace Presentacion
 
         private void txbfiltrocitamedica_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
-            string query = "select * from citamedica where "+cmbxfiltrocita.Text+" like '%"+txbfiltrocitamedica.Text+"%'";
-            SqlDataAdapter ada = new SqlDataAdapter(query,con);
+            try
+            {
+                SqlConnection con = new SqlConnection(Presentation.Properties.Settings.Default.conexion);
+                string query = "select * from citamedica where " + cmbxfiltrocita.Text + " like '%" + txbfiltrocitamedica.Text + "%'";
+                SqlDataAdapter ada = new SqlDataAdapter(query, con);
 
-            con.Open();
+                con.Open();
 
-            DataSet data = new DataSet();
+                DataSet data = new DataSet();
 
-            ada.Fill(data, "citamedica");
+                ada.Fill(data, "citamedica");
 
-            DBVcitasmedicas.DataSource = data;
-            DBVcitasmedicas.DataMember = "citamedica";
+                DBVcitasmedicas.DataSource = data;
+                DBVcitasmedicas.DataMember = "citamedica";
+            }
+            catch
+            {
 
+            }
+            
+
+        }
+
+        private void btnmedicamentos_Click(object sender, EventArgs e)
+        {
+            Form medic = new FormLaboratorio();
+            medic.Show();
+        }
+
+        private void btnreportes_Click(object sender, EventArgs e)
+        {
+            Form repo = new FormReports();
+            repo.Show();
         }
     }
 }

@@ -55,7 +55,7 @@ namespace Presentacion
             this.txbfiltrocitamedica = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.tbxapellidopac = new System.Windows.Forms.TextBox();
-            this.btneliminarhis = new System.Windows.Forms.Button();
+            this.btneditarhis = new System.Windows.Forms.Button();
             this.btnguardarhistorial = new System.Windows.Forms.Button();
             this.txbdetalles = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -108,6 +108,8 @@ namespace Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.citamedicaTableAdapter = new Presentation.SAPSDBDataSetTableAdapters.citamedicaTableAdapter();
+            this.btnreportes = new System.Windows.Forms.Button();
+            this.btnmedicamentos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DBVcitasmedicas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.citamedicaBindingSource)).BeginInit();
@@ -118,6 +120,8 @@ namespace Presentacion
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnmedicamentos);
+            this.panel1.Controls.Add(this.btnreportes);
             this.panel1.Controls.Add(this.label30);
             this.panel1.Controls.Add(this.cmbxfiltrocita);
             this.panel1.Controls.Add(this.txbestadocivil);
@@ -133,7 +137,7 @@ namespace Presentacion
             this.panel1.Controls.Add(this.txbfiltrocitamedica);
             this.panel1.Controls.Add(this.label29);
             this.panel1.Controls.Add(this.tbxapellidopac);
-            this.panel1.Controls.Add(this.btneliminarhis);
+            this.panel1.Controls.Add(this.btneditarhis);
             this.panel1.Controls.Add(this.btnguardarhistorial);
             this.panel1.Controls.Add(this.txbdetalles);
             this.panel1.Controls.Add(this.label28);
@@ -186,9 +190,9 @@ namespace Presentacion
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1084, 731);
+            this.panel1.Size = new System.Drawing.Size(1082, 729);
             this.panel1.TabIndex = 0;
             // 
             // label30
@@ -376,16 +380,16 @@ namespace Presentacion
             this.tbxapellidopac.Size = new System.Drawing.Size(260, 26);
             this.tbxapellidopac.TabIndex = 65;
             // 
-            // btneliminarhis
+            // btneditarhis
             // 
-            this.btneliminarhis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneliminarhis.Location = new System.Drawing.Point(165, 557);
-            this.btneliminarhis.Name = "btneliminarhis";
-            this.btneliminarhis.Size = new System.Drawing.Size(147, 45);
-            this.btneliminarhis.TabIndex = 62;
-            this.btneliminarhis.Text = "ELIMINAR";
-            this.btneliminarhis.UseVisualStyleBackColor = true;
-            this.btneliminarhis.Click += new System.EventHandler(this.btneliminarhis_Click);
+            this.btneditarhis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneditarhis.Location = new System.Drawing.Point(165, 557);
+            this.btneditarhis.Name = "btneditarhis";
+            this.btneditarhis.Size = new System.Drawing.Size(147, 45);
+            this.btneditarhis.TabIndex = 62;
+            this.btneditarhis.Text = "EDITAR";
+            this.btneditarhis.UseVisualStyleBackColor = true;
+            this.btneditarhis.Click += new System.EventHandler(this.btneliminarhis_Click);
             // 
             // btnguardarhistorial
             // 
@@ -871,6 +875,28 @@ namespace Presentacion
             // 
             this.citamedicaTableAdapter.ClearBeforeFill = true;
             // 
+            // btnreportes
+            // 
+            this.btnreportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreportes.Location = new System.Drawing.Point(918, 557);
+            this.btnreportes.Name = "btnreportes";
+            this.btnreportes.Size = new System.Drawing.Size(147, 45);
+            this.btnreportes.TabIndex = 80;
+            this.btnreportes.Text = "REPORTES";
+            this.btnreportes.UseVisualStyleBackColor = true;
+            this.btnreportes.Click += new System.EventHandler(this.btnreportes_Click);
+            // 
+            // btnmedicamentos
+            // 
+            this.btnmedicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmedicamentos.Location = new System.Drawing.Point(765, 557);
+            this.btnmedicamentos.Name = "btnmedicamentos";
+            this.btnmedicamentos.Size = new System.Drawing.Size(147, 45);
+            this.btnmedicamentos.TabIndex = 81;
+            this.btnmedicamentos.Text = "MEDICAMENTOS";
+            this.btnmedicamentos.UseVisualStyleBackColor = true;
+            this.btnmedicamentos.Click += new System.EventHandler(this.btnmedicamentos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -880,6 +906,7 @@ namespace Presentacion
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DBVcitasmedicas)).EndInit();
@@ -894,7 +921,7 @@ namespace Presentacion
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btneliminarhis;
+        private System.Windows.Forms.Button btneditarhis;
         private System.Windows.Forms.Button btnguardarhistorial;
         private System.Windows.Forms.TextBox txbdetalles;
         private System.Windows.Forms.Label label28;
@@ -970,6 +997,8 @@ namespace Presentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sintomasDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button btnmedicamentos;
+        private System.Windows.Forms.Button btnreportes;
     }
 }
 

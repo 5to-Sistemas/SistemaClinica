@@ -150,14 +150,14 @@ namespace DataAccess.DBServices
         }
 
 
-        public int existepaci(string userName)
+        public int existepaci(string idpaciente)
         {
             DataTable dt = new DataTable();
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "update Users set userName=@userName where userName=@userName";
+            comando.CommandText = "update paciente set idpaciente=@idpaciente where idpaciente=@idpaciente";
             comando.CommandType = CommandType.Text;
             comando.Parameters.Clear();
-            comando.Parameters.AddWithValue("@userName", userName);
+            comando.Parameters.AddWithValue("@idpaciente", idpaciente);
             leer = comando.ExecuteReader();
             dt.Load(leer);
             int ret = comando.ExecuteNonQuery();

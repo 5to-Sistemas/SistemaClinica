@@ -44,7 +44,7 @@ insert into Users values ( 'santiagosur34','brz600cc','Santiago','Surcos','Pacie
 GO
 -----------------------------
 
-
+/*
 CREATE TABLE HorarioMedico(
 	codper int ,
 	dia varchar,
@@ -53,7 +53,7 @@ CREATE TABLE HorarioMedico(
 	foreign key (codper) references Users(id)
 )
 ;
-go
+go*/
 
 CREATE TABLE medico(
 	idmedico int NOT NULL PRIMARY KEY,
@@ -115,7 +115,7 @@ insert into paciente values('10','68685860','calle Lagunillas #12','1968-08-14',
 insert into paciente values('11','45648696','calle Aabapo #3','2005-01-02','O+','75566165','M','Soltero','11')*/
 GO
 
-CREATE TABLE alergias(
+/*CREATE TABLE alergias(
 	idalergias int primary key identity ,
 	idpaciente int foreign key references paciente(idpaciente),
 	nombre varchar,
@@ -141,7 +141,7 @@ CREATE TABLE IMC(
 	fecha date,
 	idpaciente int foreign key references paciente(idpaciente)
 )
-GO
+GO*/
 
 
 CREATE TABLE citamedica(
@@ -192,7 +192,7 @@ Create TABLE historial(
 )	
 GO
 
-
+/*
 create table Estudios(
 	idEstudio int primary key identity,
 	idHistoria int foreign Key references historial(idHistoria),
@@ -202,7 +202,7 @@ create table Estudios(
 	Detalles varchar
 )
 GO
-
+*/
 
 -----------------------------------------------------------
 create table TipoPresentacion

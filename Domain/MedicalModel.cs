@@ -60,5 +60,19 @@ namespace Domain
             objetoCD.Eliminar(Convert.ToInt32(id));
         }
 
+        public bool existemedico(string idpaciente)
+        {
+            if (objetoCD.existemedico(idpaciente) == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+
     }
 }

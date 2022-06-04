@@ -62,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JoDuDvT3XYTdQHGFx8OOsYEZ3iXR6Xcgd2BQyDge3WQ=</dsig:DigestValue>
+        <dsig:DigestValue>4NBxhgyzD8htVoGnD/jfXtsFSYzUftEMEz0RpNNAjBw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccess.dll" size="31744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataAccess.dll" size="34304">
       <assemblyIdentity name="DataAccess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HDz1B5LzxyEy5MCHa3gvqas7iQGqRmQbqiX7eWByums=</dsig:DigestValue>
+        <dsig:DigestValue>APbheEVz3aSVjspiO945j4i0K3YcsnFWbyNpcg5SKls=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,19 +86,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>g6P3CSvr2JjViu6Wv3Uvc+7jfE1dCm2pEBKZhWTUsug=</dsig:DigestValue>
+        <dsig:DigestValue>JoqkhZRAY0m7sxY6Um3l55rDcGA/oiAB7KGf2YCt6rc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="670720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPS.exe" size="675840">
       <assemblyIdentity name="SAPS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JzwO2D9YLB6BQZFmSXSJXVgw/l3szhAaWqf3/w33m3Y=</dsig:DigestValue>
+        <dsig:DigestValue>/SMG9Itbb782HCd/vA8bil3Uf6gAU92HgIS0SNJ0R5M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -132,13 +132,13 @@
       <dsig:DigestValue>g2Y/qmgrBDF5mbgC4IyNi/nylzMPFy48I23z56GkgfI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SAPS.exe.config" size="491">
+  <file name="SAPS.exe.config" size="477">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0Eb1xcycv7Y5RocjTWa7fC11k5LYGQrFpB0CCCesyBY=</dsig:DigestValue>
+      <dsig:DigestValue>PSzZut25tUM+pnAS8ExKs6cHZU3D51bwaxs3oS22CJw=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
