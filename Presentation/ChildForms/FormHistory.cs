@@ -21,7 +21,12 @@ namespace Presentation.ChildForms
         {
             Form hm = new Presentacion.Form1();
             hm.ShowDialog();
-            //holA
+        }
+
+        private void btnBuscarLaboratorio_Click(object sender, EventArgs e)
+        {
+            FormLaboratorio frmL = new FormLaboratorio();
+            frmL.Show();
         }
     }
 }

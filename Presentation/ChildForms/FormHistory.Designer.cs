@@ -40,6 +40,7 @@
             this.Label7 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBuscarLaboratorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +127,7 @@
             this.Label7.ForeColor = System.Drawing.Color.DimGray;
             this.Label7.Location = new System.Drawing.Point(26, 18);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(52, 16);
+            this.Label7.Size = new System.Drawing.Size(53, 16);
             this.Label7.TabIndex = 94;
             this.Label7.Text = "Buscar:";
             // 
@@ -190,11 +191,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(778, 446);
             this.dataGridView1.TabIndex = 92;
             // 
+            // btnBuscarLaboratorio
+            // 
+            this.btnBuscarLaboratorio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscarLaboratorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBuscarLaboratorio.FlatAppearance.BorderSize = 0;
+            this.btnBuscarLaboratorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarLaboratorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarLaboratorio.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarLaboratorio.Location = new System.Drawing.Point(813, 241);
+            this.btnBuscarLaboratorio.Name = "btnBuscarLaboratorio";
+            this.btnBuscarLaboratorio.Size = new System.Drawing.Size(130, 38);
+            this.btnBuscarLaboratorio.TabIndex = 100;
+            this.btnBuscarLaboratorio.Text = "Buscar Laboratorio";
+            this.btnBuscarLaboratorio.UseVisualStyleBackColor = false;
+            this.btnBuscarLaboratorio.Click += new System.EventHandler(this.btnBuscarLaboratorio_Click);
+            // 
             // FormHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 528);
+            this.Controls.Add(this.btnBuscarLaboratorio);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.btnEdit);
@@ -221,5 +239,6 @@
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
+        internal System.Windows.Forms.Button btnBuscarLaboratorio;
     }
 }
