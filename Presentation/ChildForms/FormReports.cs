@@ -16,10 +16,17 @@ namespace Presentation.ChildForms
     {
         private UserModel userModel = new UserModel();
         Medicamento medicamento;
+        Paciente paciente;
+        Historial historial;
         public FormReports()
         {
             InitializeComponent();
             medicamento = new Medicamento();
+            paciente = new Paciente();
+            historial = new Historial();
+            medicamento.TraerTodos(dataMedicamentos);
+            paciente.TraerTodos(dtgvPaciente);
+            historial.TraerTodos(dataHistorial);
         }
 
         private void btnGenerarReporte_Click(object sender, EventArgs e)
@@ -29,6 +36,15 @@ namespace Presentation.ChildForms
             {
                 string item = dtgvPaciente.Rows[dtgvPaciente.CurrentCell.RowIndex].Cells[i].Value.ToString();
                 list.Add(item);
+            }
+            string[] datos = list.ToArray();
+            if (datos[8] == "True")
+            {
+                datos[8] = "Activo";
+            }
+            else
+            {
+                datos[8] = "Inactivo";
             }
         }
 
@@ -45,8 +61,16 @@ namespace Presentation.ChildForms
         }
 
 
-        private void FormReports_Load(object sender, EventArgs e)
+        private void btnReporteHistorial_Click(object sender, EventArgs e)
         {
+            List<string> list = new List<string>();
+            for (int i = 0; i < dataHistorial.Columns.Count; i++)
+            {
+                string item = dataHistorial.Rows[dtgvPaciente.CurrentCell.RowIndex].Cells[i].Value.ToString();
+                list.Add(item);
+            }
+
+
 
         }
     }

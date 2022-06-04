@@ -62,3 +62,14 @@ D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
 D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.csproj.CopyComplete
 D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.dll
 D:\GitHub\SistemaClinica\Domain\obj\Debug\Domain.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\bin\Debug\Domain.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\bin\Debug\Domain.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\bin\Debug\Common.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\bin\Debug\DataAccess.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\bin\Debug\Common.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\bin\Debug\DataAccess.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\obj\Debug\Domain.csproj.CopyComplete
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\obj\Debug\Domain.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Domain\obj\Debug\Domain.pdb

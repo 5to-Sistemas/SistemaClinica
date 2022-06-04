@@ -10,8 +10,8 @@ namespace CapaDatos
 {
     public class ConexionSQL
     {
-        public string stringcone = "Data Source=PCEDU;Initial Catalog=SAPSDB;Integrated Security=True";
-        public SqlConnection Conexion = new SqlConnection("Data Source=PCEDU;Initial Catalog=SAPSDB;Integrated Security=True");
+        public string stringcone = "Data Source=CHEBI\\CHEBISQL;Initial Catalog=SAPSDB;Integrated Security=True";
+        public SqlConnection Conexion = new SqlConnection("Data Source=CHEBI\\CHEBISQL;Initial Catalog=SAPSDB;Integrated Security=True");
 
         public SqlConnection AbrirConexion()
         {

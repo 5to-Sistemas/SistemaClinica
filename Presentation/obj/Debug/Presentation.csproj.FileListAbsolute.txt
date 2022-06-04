@@ -191,3 +191,44 @@ C:\Users\Hp\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\Presentation.
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\SAPS.exe
 C:\Users\Hp\Documents\GitHub\SistemaClinica\Presentation\obj\Debug\SAPS.pdb
 C:\Users\pc\GitHub\Presentation\obj\Debug\Presentation.ChildForms.FormLaboratorio.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\SAPS.exe.config
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\SAPS.exe.manifest
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\SAPS.application
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\SAPS.exe
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\SAPS.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\CircularProgressBar.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\Common.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\DataAccess.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\Domain.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\WinFormAnimation.dll
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\Common.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\DataAccess.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\Domain.pdb
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\bin\Debug\CircularProgressBar.xml
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormLaboratorio.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormAddCitaMedica.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormCitaMedica.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormDashboard.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormHistory.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormMedical.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormPacients.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormPatientMaintenance.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormRecoverPassword.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormReports.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormUserMaintenance.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormUserProfile.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormUsers.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.ChildForms.FormVerifyUser.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentacion.Form1.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.LoginForm.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.MainForm.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.WelcomeForm.resources
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\SAPS.exe.manifest
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\SAPS.application
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\Presentation.csproj.CopyComplete
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\SAPS.exe
+D:\My works\Github\Proshecto tallerprogra\SistemaClinica\Presentation\obj\Debug\SAPS.pdb

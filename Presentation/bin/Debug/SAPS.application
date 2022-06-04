@@ -4,7 +4,7 @@
   <description asmv2:publisher="SAPS" asmv2:product="SAPS" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="SAPS.exe.manifest" size="7751">
@@ -14,7 +14,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jf+peNDJOryHPVSqFzYed7jU0hpMjy6J4XUqjTgFgwA=</dsig:DigestValue>
+        <dsig:DigestValue>TR+rkqoDomNKnvCFtPgPYpA4/GPLIUvcGl7iJ+oUG3M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
