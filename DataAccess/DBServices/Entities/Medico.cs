@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DataAccess.DBServices.Entities
 {
     public class Medico
@@ -31,11 +32,23 @@ namespace DataAccess.DBServices.Entities
         public DataSet SelectAll()
         {
             cx.con = new SqlConnection(cx.cadenaConexion);
-            cx.adpt = new SqlDataAdapter("select * from medico" +
+            cx.adpt = new SqlDataAdapter("select u.firstName,u.lastName, u.position, m.especialidad,m.HorarioInicio,m.HorarioFin from Users as u, medico as m where u.id = m.idmedico + m.especialidad=" + "", cx.con);
+            DataSet ds = new DataSet();
+            cx.adpt.Fill(ds);
+            return ds;
+        }
+
+        public DataSet SeleccionarCita()
+        {
+            cx.con = new SqlConnection(cx.cadenaConexion);
+            cx.adpt = new SqlDataAdapter("select * from medico inner join Users on id= idmedico" +
                 "", cx.con);
             DataSet ds = new DataSet();
             cx.adpt.Fill(ds);
             return ds;
         }
+
+
+
     }
 }
